@@ -5,12 +5,53 @@ html, body {
     padding: 0;
 }
 
-#navbar-container {
-    display: inline-block;
-    box-shadow: 0 10px 10px -10px black;
-}
-
 #introduction {
     display: inline-block;
     color: #fff;
+
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+
+    margin-top: 10rem;
+}
+
+#testing-message {
+    font-size: 2rem;
+    font-family: "Karla", "san-serif";
+
+    margin-top: 15rem;
+    margin-bottom: 25rem;
+}
+
+.ref-cont {
+    display: inline-block;
+}
+
+#mail-ref {
+    display: inline-block;
+
+    color: #fff;
+
+    height: 5rem;
+    width: 5rem;
+}
+
+#github-ref {
+    display: inline-block;
+
+    color: #fff;
+
+    height: 5rem;
+    width: 5rem;
+}
+
+#linkedin-ref {
+    display: inline-block;
+
+    color: #fff;
+
+    height: 5rem;
+    width: 5rem;
 }
