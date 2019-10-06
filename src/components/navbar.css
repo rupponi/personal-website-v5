@@ -1,0 +1,56 @@
+#navbar-container {
+    display: inline-block;
+    position: fixed;
+
+    background: #101014;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+
+    
+    box-shadow: 0 10px 10px -10px black;
+}
+
+.ref-cont {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#mail-ref {
+    display: inline-block;
+
+    color: #fff;
+
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#github-ref {
+    display: inline-block;
+
+    color: #fff;
+
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#linkedin-ref {
+    display: inline-block;
+
+    color: #fff;
+
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#name-title {
+    display: inline-block;
+
+    color: #fff;
+    
+    text-align: center;
+    font-family: "Karla", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 100;
+}

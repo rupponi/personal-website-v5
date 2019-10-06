@@ -1,0 +1,16 @@
+html, body {
+    background: #333;
+    height: 200%;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-container {
+    display: inline-block;
+    box-shadow: 0 10px 10px -10px black;
+}
+
+#introduction {
+    display: inline-block;
+    color: #fff;
+}
