@@ -6,51 +6,54 @@
     height: 4rem;
     width: 100%;
     text-align: center;
+}
 
-    
+#navbar-container:hover {
     box-shadow: 0 10px 10px -10px black;
 }
 
-.ref-cont {
-    display: inline-block;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#mail-ref {
-    display: inline-block;
-
-    color: #fff;
-
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
-#github-ref {
-    display: inline-block;
-
-    color: #fff;
-
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
-#linkedin-ref {
-    display: inline-block;
-
-    color: #fff;
-
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
 #name-title {
-    display: inline-block;
-
     color: #fff;
-    
-    text-align: center;
     font-family: "Karla", "sans-serif";
+
     font-size: 1.5rem;
     font-weight: 100;
+
+    display: inline-block;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@-webkit-keyframes titleClick {
+    0% {
+        font-size: 1.5rem;
+    }
+    50% {
+        font-size: 1.2rem;
+    }
+    100% {
+        font-size: 1.5rem;
+    }
+}
+@keyframes titleClick {
+    0% {
+        font-size: 1.5rem;
+    }
+    50% {
+        font-size: 1.2rem;
+    }
+    100% {
+        font-size: 1.5rem;
+    }
+}
+
+.animate-title-click {
+    animation-name: titleClick;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
