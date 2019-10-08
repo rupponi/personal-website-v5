@@ -6,6 +6,8 @@
     height: 4rem;
     width: 100%;
     text-align: center;
+
+    overflow: auto;
 }
 
 #navbar-container:hover {
@@ -19,13 +21,28 @@
     font-size: 1.5rem;
     font-weight: 100;
 
-    display: inline-block;
-    text-align: center;
-
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#title-panel {
+    float: left;
+
+    height: 100%;
+    width: -moz-calc(100% - 5rem);
+    width: -webkit-calc(100% - 5rem);
+    width: calc(100% - 5rem);
+}
+
+#menu-panel {
+    float: right;
+
+    color: #fff;
+
+    height: 100%;
+    width: 5rem;
 }
 
 @-webkit-keyframes titleClick {

@@ -2,7 +2,7 @@
   "name": "rohanupponi.com",
   "private": true,
   "description": "A web-based portfolio for discovering, learning, and reaching out.",
-  "version": "1.0",
+  "version": "0.1.0",
   "author": "Rohan Upponi",
   "dependencies": {
     "gatsby": "^2.15.19",
