@@ -2,7 +2,7 @@
     display: inline-block;
     position: fixed;
 
-    background: #101014;
+    background: #03070F;
     height: 4rem;
     width: 100%;
     text-align: center;
@@ -38,6 +38,8 @@
 
 #menu-panel {
     float: right;
+    display: flex;
+    align-items: center;
 
     color: #fff;
 
@@ -47,23 +49,29 @@
 
 @-webkit-keyframes titleClick {
     0% {
+        color: #FFF;
         font-size: 1.5rem;
     }
     50% {
+        color: #00DAFF;
         font-size: 1.2rem;
     }
     100% {
+        color: #FFF;
         font-size: 1.5rem;
     }
 }
 @keyframes titleClick {
     0% {
+        color: #FFF;
         font-size: 1.5rem;
     }
     50% {
+        color: #00DAFF;
         font-size: 1.2rem;
     }
     100% {
+        color: #FFF;
         font-size: 1.5rem;
     }
 }

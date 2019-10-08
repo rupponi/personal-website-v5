@@ -1,11 +1,17 @@
 import React from "react"
 import NavBar from "../components/navbar"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import "../styles/index.css"
 
 export default ({ data }) => (
   <html>
     <link href = "https://fonts.googleapis.com/css?family=Karla" rel = "stylesheet"></link>
+
+    <Helmet>
+      <meta charSet = "utf-8"/>
+      <title>{data.site.siteMetadata.title}</title>
+    </Helmet>
 
 
     <div id="navbar">
@@ -31,6 +37,7 @@ export const query = graphql`
 query {
     site {
       siteMetadata {
+        title,
         author,
         description
       }
