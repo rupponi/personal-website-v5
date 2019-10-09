@@ -16,6 +16,10 @@ function navBarClick(e) {
         title.classList.remove("animate-title-click");
         container.classList.remove("light-navbar");
     });
+
+    if (menuSelected) {
+        menuSelect();
+    }
 }
 
 function menuSelect(e) {
@@ -34,7 +38,7 @@ function menuSelect(e) {
     let
     menulengthtarget = menuSelected ? 0 : 6,
     aboutpostarget = menuSelected ? 0 : 5,
-    resumepostarget = menuSelected ? 0 : 10;
+    resumepostarget = menuSelected ? 0 : 9;
 
 
     menulist.style.mozTransform = "scale(1, "+menulengthtarget+")";
@@ -59,21 +63,45 @@ function menuSelect(e) {
     menuSelected = !menuSelected;
 }
 
+function selectAbout(e) {
+    let aboutSection = document.getElementById("about");
+    let aboutLink = document.getElementById("about-link");
+
+    aboutLink.classList.add("animate-menu-item-click");
+    aboutLink.addEventListener('animationend', () => {
+        aboutLink.classList.remove("animate-menu-item-click");
+    });
+
+    aboutSection.scrollIntoView();
+
+    if (menuSelected) {
+        menuSelect();
+    }
+}
+
+function selectResume(e) {
+    window.open("https://rohanupponi.com/res/resume.pdf");
+
+    if (menuSelected) {
+        menuSelect();
+    }
+}
+
 const NavBar = () => {
     return (
         <div id = "navbar-component">
             <div id = "navbar-container">
                 <div id = "title-panel" onClick = {navBarClick}>
-                    <h1 id = "name-title" unselectable = "on">ROHAN UPPONI</h1>
+                    <h1 id = "name-title" class = "unselectable">ROHAN UPPONI</h1>
                 </div>
                 <div id = "menu-panel" onClick = {menuSelect}>
-                    <h1 id = "menu-symbol" unselectable = "on">{'\u2630'}</h1>
+                    <h1 id = "menu-symbol" class = "unselectable">{'\u2630'}</h1>
                 </div>
             </div>
             <div id = "menu-container"></div>
             <ul id = "menu-list">
-                <li id = "about-link" class = "list-link">ABOUT</li>
-                <li id = "resume-link" class = "list-link">RESUME</li>
+                <li id = "about-link" class = "list-link unselectable" onClick = {selectAbout}>ABOUT</li>
+                <li id = "resume-link" class = "list-link unselectable" onClick = {selectResume}>RESUME</li>
             </ul>
         </div>
     );
