@@ -8,7 +8,7 @@
     position: fixed;
 
     background: #03070F;
-    height: 4rem;
+    height: 4.5rem;
     width: 100%;
     text-align: center;
 
@@ -27,6 +27,8 @@
 
     font-size: 1.5rem;
     font-weight: 100;
+    margin-top: 1.5rem;
+    margin-left: 7rem;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -58,6 +60,11 @@
 #menu-symbol {
     margin-left: 2rem;
     font-size: 1.5rem;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 #menu-container {
