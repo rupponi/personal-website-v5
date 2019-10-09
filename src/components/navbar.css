@@ -28,7 +28,7 @@
     font-size: 1.5rem;
     font-weight: 100;
     margin-top: 1.5rem;
-    margin-left: 7rem;
+    margin-left: 6rem;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -40,9 +40,9 @@
     float: left;
 
     height: 100%;
-    width: -moz-calc(100% - 7rem);
-    width: -webkit-calc(100% - 7rem);
-    width: calc(100% - 7rem);
+    width: -moz-calc(100% - 6rem);
+    width: -webkit-calc(100% - 6rem);
+    width: calc(100% - 6rem);
 }
 
 #menu-panel {
@@ -54,7 +54,7 @@
     color: #fff;
 
     height: 100%;
-    width: 7rem;
+    width: 6rem;
 }
 
 #menu-symbol {

@@ -19,7 +19,7 @@ export default ({ data }) => (
     </div>
 
     <div id = "introduction">
-      <h1 id = "testing-message">My name is {data.site.siteMetadata.author} and {data.site.siteMetadata.description}</h1>
+      <h1 id = "intro-message">My name is {data.site.siteMetadata.author} and {data.site.siteMetadata.description}</h1>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <div class="ref-cont">
         <a target = "_blank" rel = "noreferrer noopener" href = "mailto: upponirohan@gmail.com"><i id="mail-ref" class="fa fa-envelope-o"></i></a>
