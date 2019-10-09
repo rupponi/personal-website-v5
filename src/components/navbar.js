@@ -1,6 +1,8 @@
 import React from "react"
 import "./navbar.css"
 
+var menuSelected = false;
+
 function navBarClick(e) {
     let title = document.getElementById("name-title");
     let container = document.getElementById("navbar-container");
@@ -17,25 +19,62 @@ function navBarClick(e) {
 }
 
 function menuSelect(e) {
-    let menusymbol = document.getElementById("menu-symbol");
+    let
+    menusymbol = document.getElementById("menu-symbol"),
+    menulist = document.getElementById("menu-container"),
+
+    aboutlink = document.getElementById("about-link"),
+    resumelink = document.getElementById("resume-link");
 
     menusymbol.classList.add("animate-title-click");
-
     menusymbol.addEventListener('animationend', () => {
         menusymbol.classList.remove("animate-title-click");
     });
+
+    let
+    menulengthtarget = menuSelected ? 0 : 6,
+    aboutpostarget = menuSelected ? 0 : 5,
+    resumepostarget = menuSelected ? 0 : 10;
+
+
+    menulist.style.mozTransform = "scale(1, "+menulengthtarget+")";
+    menulist.style.oTransform = "scale(1, "+menulengthtarget+")";
+    menulist.style.msTransform = "scale(1, "+menulengthtarget+")";
+    menulist.style.transform = "scale(1, "+menulengthtarget+")";
+
+    aboutlink.style.webkitTransform = "translate(0px, "+aboutpostarget+"rem)";
+    aboutlink.style.mozTransform = "translate(0px, "+aboutpostarget+"rem)";
+    aboutlink.style.oTransform = "translate(0px, "+aboutpostarget+"rem)";
+    aboutlink.style.msTransform = "translate(0px, "+aboutpostarget+"rem)";
+    aboutlink.style.transform = "translate(0px, "+aboutpostarget+"rem)";
+
+    resumelink.style.webkitTransform = "translate(0px, "+resumepostarget+"rem)";
+    resumelink.style.mozTransform = "translate(0px, "+resumepostarget+"rem)";
+    resumelink.style.oTransform = "translate(0px, "+resumepostarget+"rem)";
+    resumelink.style.msTransform = "translate(0px, "+resumepostarget+"rem)";
+    resumelink.style.transform = "translate(0px, "+resumepostarget+"rem)";
+
+
+
+    menuSelected = !menuSelected;
 }
 
 const NavBar = () => {
-
     return (
-        <div id = "navbar-container">
-            <div id = "title-panel" onClick = {navBarClick}>
-                <h1 id = "name-title" unselectable = "on">ROHAN UPPONI</h1>
+        <div id = "navbar-component">
+            <div id = "navbar-container">
+                <div id = "title-panel" onClick = {navBarClick}>
+                    <h1 id = "name-title" unselectable = "on">ROHAN UPPONI</h1>
+                </div>
+                <div id = "menu-panel" onClick = {menuSelect}>
+                    <h1 id = "menu-symbol" unselectable = "on">{'\u2630'}</h1>
+                </div>
             </div>
-            <div id = "menu-panel" onClick = {menuSelect}>
-                <h1 id = "menu-symbol" unselectable = "on">{'\u2630'}</h1>
-            </div>
+            <div id = "menu-container"></div>
+            <ul id = "menu-list">
+                <li id = "about-link" class = "list-link">ABOUT</li>
+                <li id = "resume-link" class = "list-link">RESUME</li>
+            </ul>
         </div>
     );
 }

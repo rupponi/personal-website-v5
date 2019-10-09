@@ -1,3 +1,8 @@
+#navbar-component {
+    height: 20rem;
+    position: absolute;
+}
+
 #navbar-container {
     display: inline-block;
     position: fixed;
@@ -8,6 +13,8 @@
     text-align: center;
 
     overflow: auto;
+
+    z-index: 1000;
 }
 
 #navbar-container:hover {
@@ -31,25 +38,57 @@
     float: left;
 
     height: 100%;
-    width: -moz-calc(100% - 5rem);
-    width: -webkit-calc(100% - 5rem);
-    width: calc(100% - 5rem);
+    width: -moz-calc(100% - 7rem);
+    width: -webkit-calc(100% - 7rem);
+    width: calc(100% - 7rem);
 }
 
 #menu-panel {
     float: right;
     display: flex;
     align-items: center;
+    padding: 0;
 
     color: #fff;
 
     height: 100%;
-    width: 5rem;
+    width: 7rem;
 }
 
 #menu-symbol {
-    margin: 0;
+    margin-left: 2rem;
     font-size: 1.5rem;
+}
+
+#menu-container {
+    position: fixed;
+    background: #03070F;
+    border-radius: 0.2rem;
+
+    height: 4rem;
+    width: 15rem;
+    z-index: 10;
+
+    padding: 0;
+    margin-left: calc(100% - 15rem);
+}
+
+#menu-list {
+    position: fixed;
+
+    width: 15rem;
+    margin-left: calc(100% - 15rem);
+    color: #fff;
+    z-index: 10;
+}
+
+.list-link {
+    list-style-type: none;
+    position: absolute;
+    color: #fff;
+    width: 15rem;
+    margin-left: calc(100% - 15rem);
+    z-index: 1;
 }
 
 
