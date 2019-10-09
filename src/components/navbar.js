@@ -38,8 +38,14 @@ function menuSelect(e) {
     let
     menulengthtarget = menuSelected ? 0 : 6,
     aboutpostarget = menuSelected ? 0 : 5,
-    resumepostarget = menuSelected ? 0 : 9;
+    resumepostarget = menuSelected ? 0 : 9,
+    symbolangletarget = menuSelected ? 0 : 180;
 
+    menusymbol.style.webkitTransform = "rotate("+symbolangletarget+"deg)";
+    menusymbol.style.mozTransform = "rotate("+symbolangletarget+"deg)";
+    menusymbol.style.oTransform = "rotate("+symbolangletarget+"deg)";
+    menusymbol.style.msTransform = "rotate("+symbolangletarget+"deg)";
+    menusymbol.style.transform = "rotate("+symbolangletarget+"deg)";
 
     menulist.style.mozTransform = "scale(1, "+menulengthtarget+")";
     menulist.style.oTransform = "scale(1, "+menulengthtarget+")";
@@ -57,6 +63,8 @@ function menuSelect(e) {
     resumelink.style.oTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.msTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.transform = "translate(0px, "+resumepostarget+"rem)";
+
+
 
 
 
