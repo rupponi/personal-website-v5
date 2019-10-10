@@ -18,8 +18,8 @@ html, body {
 }
 
 #intro-message {
-    font-size: 2rem;
     font-family: "Karla", "san-serif";
+    font-size: 25px;
 
     margin-top: 30%;
     margin-left: 10%;
@@ -83,8 +83,8 @@ html, body {
 }
 
 #about-message {
-    font-size: 2rem;
     font-family: "Karla", "san-serif";
+    font-size: 25px;
 
     margin-top: 30%;
     margin-left: 10%;
