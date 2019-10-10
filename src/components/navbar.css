@@ -79,11 +79,11 @@
     padding: 0;
     margin-left: calc(100% - 15rem);
 
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 #menu-list {
@@ -102,16 +102,22 @@
     color: #fff;
     font-size: 1.2rem;
     font-family: "Karla", "sans-serif";
+    text-align: center;
 
     width: 15rem;
-    margin-left: calc(100% - 15rem);
+    margin-left: calc(100% - 20rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     z-index: 1;
 
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.list-link:hover {
+    box-shadow: 0 0 3px #00DAFF;
 }
 
 
@@ -188,28 +194,40 @@
     0% {
         color: #FFF;
         font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     50% {
         color: #00DAFF;
         font-size: 0.9rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
     }
     100% {
         color: #FFF;
         font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 }
 @keyframes menuItemClick {
     0% {
         color: #FFF;
         font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     50% {
         color: #00DAFF;
         font-size: 0.9rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
     }
     100% {
         color: #FFF;
         font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 }
 .animate-menu-item-click {
