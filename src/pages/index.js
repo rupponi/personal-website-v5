@@ -21,19 +21,31 @@ export default ({ data }) => (
     <div id = "introduction">
       <h1 id = "intro-message">My name is {data.site.siteMetadata.author} and {data.site.siteMetadata.description}</h1>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-      <div class="ref-cont">
-        <a target = "_blank" rel = "noreferrer noopener" href = "mailto: upponirohan@gmail.com"><i id="mail-ref" class="fa fa-envelope-o"></i></a>
-      </div>
-      <div class="ref-cont">
-        <a target = "_blank" rel = "noreferrer noopener" href = "https://github.com/rupponi"><i id="github-ref" class="fa fa-github"></i></a>
-      </div>
-      <div class="ref-cont">
-        <a target = "_blank" rel = "noreferrer noopener" href = "https://www.linkedin.com/in/rohan-upponi-139341108/"><i id="linkedin-ref" class = "fa fa-linkedin"></i></a>
+      <div id = "ref-panel">
+        <div class="ref-cont">
+          <a target = "_blank" rel = "noreferrer noopener" href = "mailto: upponirohan@gmail.com"><i id="mail-ref" class="fa fa-envelope-o"></i></a>
+        </div>
+        <div class="ref-cont">
+          <a target = "_blank" rel = "noreferrer noopener" href = "https://github.com/rupponi"><i id="github-ref" class="fa fa-github"></i></a>
+        </div>
+        <div class="ref-cont">
+          <a target = "_blank" rel = "noreferrer noopener" href = "https://www.linkedin.com/in/rohan-upponi-139341108/"><i id="linkedin-ref" class = "fa fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
 
     <div id = "about">
       <h1 class = "section-title">ABOUT</h1>
+      <h1 id = "about-message">
+          I am currently a 2019 graduate in Computer Science from Arizona State University. <br/><br/>
+
+          I like to tackle life one challenge at a time. Whether on the front-end, challenging my
+          creativity to design a beautiful interface, or on the backend, to make sure the product
+          can do its job with maximum efficiency and effectiveness. <br/><br/>
+
+          Outside of spending hours focused on a computer screen, I enjoy keeping myself going with
+          morning runs and workouts or challenging my inner foodie with something new to try! <br/><br/>
+      </h1>
     </div>
 
   </html>

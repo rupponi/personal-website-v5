@@ -13,7 +13,6 @@ html, body {
     height: 100%;
     width: 100%;
     text-align: center;
-    align-content: center;
 
     margin-top: 10rem;
 }
@@ -22,46 +21,55 @@ html, body {
     font-size: 2rem;
     font-family: "Karla", "san-serif";
 
-    margin-top: 15rem;
-    margin-bottom: 25rem;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#ref-panel {
+    position: absolute;
+
+    height: 5rem;
+    width: 100%;
+
+    top: -moz-calc(100% - 20rem);
+    top: -webkit-calc(100% - 20rem);
+    top: calc(100% - 20rem);
 }
 
 .ref-cont {
     display: inline-block;
+
+    font-size: 2rem;
+
+    height: 5rem;
+    width: 5rem;
+}
+.ref-cont:hover {
+    box-shadow: 0 0 3px #00DAFF;
 }
 
 #mail-ref {
-    display: inline-block;
-
+    margin-top: 30%;
     color: #fff;
-
-    height: 5rem;
-    width: 5rem;
 }
 
 #github-ref {
-    display: inline-block;
-
+    margin-top: 30%;
     color: #fff;
-
-    height: 5rem;
-    width: 5rem;
 }
 
 #linkedin-ref {
-    display: inline-block;
-
+    margin-top: 30%;
     color: #fff;
-
-    height: 5rem;
-    width: 5rem;
 }
 
 .section-title {
     font-family: "Karla", "sans-serif";
     margin-top: 6rem;
-    margin-right: 7rem;
 }
+
+
 
 #about {
     position: absolute;
@@ -72,4 +80,13 @@ html, body {
     width: 100%;
 
     text-align: center;
+}
+
+#about-message {
+    font-size: 2rem;
+    font-family: "Karla", "san-serif";
+
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
 }

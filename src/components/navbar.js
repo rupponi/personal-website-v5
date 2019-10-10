@@ -64,10 +64,6 @@ function menuSelect(e) {
     resumelink.style.msTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.transform = "translate(0px, "+resumepostarget+"rem)";
 
-
-
-
-
     menuSelected = !menuSelected;
 }
 
@@ -78,9 +74,8 @@ function selectAbout(e) {
     aboutLink.classList.add("animate-menu-item-click");
     aboutLink.addEventListener('animationend', () => {
         aboutLink.classList.remove("animate-menu-item-click");
+        aboutSection.scrollIntoView();
     });
-
-    aboutSection.scrollIntoView();
 
     if (menuSelected) {
         menuSelect();
@@ -88,6 +83,14 @@ function selectAbout(e) {
 }
 
 function selectResume(e) {
+    let resumeLink = document.getElementById("resume-link");
+
+    resumeLink.classList.add("animate-menu-item-click");
+    resumeLink.addEventListener('animationend', () => {
+        resumeLink.classList.remove("animate-menu-item-click");
+    });
+
+
     window.open("https://rohanupponi.com/res/resume.pdf");
 
     if (menuSelected) {
