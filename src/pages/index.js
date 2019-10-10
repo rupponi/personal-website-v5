@@ -4,6 +4,36 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import "../styles/index.css"
 
+function mailButtonClick() {
+  let targetButton = document.getElementById("mail-button");
+
+  targetButton.classList.add("animate-ref-button-click");
+  targetButton.addEventListener('animationend', () => {
+    targetButton.classList.remove("animate-ref-button-click");
+    window.open("mailto: upponirohan@gmail.com");
+  });
+}
+
+function githubButtonClick() {
+  let targetButton = document.getElementById("github-button");
+
+  targetButton.classList.add("animate-ref-button-click");
+  targetButton.addEventListener('animationend', () => {
+    targetButton.classList.remove("animate-ref-button-click");
+    window.open("https://github.com/rupponi");
+  });
+}
+
+function linkedinButtonClick() {
+  let targetButton = document.getElementById("linkedin-button");
+
+  targetButton.classList.add("animate-ref-button-click");
+  targetButton.addEventListener('animationend', () => {
+    targetButton.classList.remove("animate-ref-button-click");
+    window.open("https://linkedin.com/in/rohanupponi");
+  });
+}
+
 export default ({ data }) => (
   <html>
     <link href = "https://fonts.googleapis.com/css?family=Karla" rel = "stylesheet"></link>
@@ -21,17 +51,10 @@ export default ({ data }) => (
     <div id = "introduction">
       <h1 id = "intro-message">My name is {data.site.siteMetadata.author} and {data.site.siteMetadata.description}</h1>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-      <div id = "ref-panel">
-        <div class="ref-cont">
-          <a target = "_blank" rel = "noreferrer noopener" href = "mailto: upponirohan@gmail.com"><i id="mail-ref" class="fa fa-envelope-o"></i></a>
-        </div>
-        <div class="ref-cont">
-          <a target = "_blank" rel = "noreferrer noopener" href = "https://github.com/rupponi"><i id="github-ref" class="fa fa-github"></i></a>
-        </div>
-        <div class="ref-cont">
-          <a target = "_blank" rel = "noreferrer noopener" href = "https://www.linkedin.com/in/rohan-upponi-139341108/"><i id="linkedin-ref" class = "fa fa-linkedin"></i></a>
-        </div>
-      </div>
+
+      <div id = "mail-button" class="ref-cont" onClick = {mailButtonClick}><i id="mail-ref" class="fa fa-envelope-o"></i></div>
+      <div id = "github-button" class="ref-cont" onClick = {githubButtonClick}><i id="github-ref" class="fa fa-github"></i></div>
+      <div id = "linkedin-button" class="ref-cont" onClick = {linkedinButtonClick}><i id="linkedin-ref" class = "fa fa-linkedin"></i></div>
     </div>
 
     <div id = "about">
