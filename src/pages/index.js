@@ -6,31 +6,43 @@ import "../styles/index.css"
 
 function mailButtonClick() {
   let targetButton = document.getElementById("mail-button");
+  let linkOpened = false;
 
   targetButton.classList.add("animate-ref-button-click");
   targetButton.addEventListener('animationend', () => {
     targetButton.classList.remove("animate-ref-button-click");
-    window.open("mailto: upponirohan@gmail.com");
+    if (!linkOpened) {
+      window.open("mailto: upponirohan@gmail.com");
+      linkOpened = true;
+    }
   });
 }
 
 function githubButtonClick() {
   let targetButton = document.getElementById("github-button");
+  let linkOpened = false;
 
   targetButton.classList.add("animate-ref-button-click");
   targetButton.addEventListener('animationend', () => {
     targetButton.classList.remove("animate-ref-button-click");
-    window.open("https://github.com/rupponi");
+    if (!linkOpened) {
+      window.open("https://github.com/rupponi");
+      linkOpened = true;
+    }
   });
 }
 
 function linkedinButtonClick() {
   let targetButton = document.getElementById("linkedin-button");
+  let linkOpened = false;
 
   targetButton.classList.add("animate-ref-button-click");
   targetButton.addEventListener('animationend', () => {
     targetButton.classList.remove("animate-ref-button-click");
-    window.open("https://linkedin.com/in/rohanupponi");
+    if (!linkOpened) {
+      window.open("https://linkedin.com/in/rohanupponi");
+      linkOpened = true;
+    }
   });
 }
 

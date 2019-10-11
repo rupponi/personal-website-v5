@@ -1,9 +1,13 @@
 html, body {
     scroll-behavior: smooth;
     background: #050B16;
-    height: 200%;
     margin: 0;
     padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 10000;
 }
 
 #introduction {
@@ -13,8 +17,6 @@ html, body {
     height: 100%;
     width: 100%;
     text-align: center;
-
-    margin-top: 10rem;
 }
 
 #intro-message {
@@ -24,22 +26,16 @@ html, body {
     font-size: 1.5em;
 
     top: 30%;
+    height: 30%;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-#ref-panel {
-    position: absolute;
-
-    height: 5rem;
-    width: 100%;
-
-    
 }
 
 .ref-cont {
     display: inline-block;
     font-size: 2rem;
+
+    top: 85%;
 }
 .ref-cont:hover {
     box-shadow: 0 0 3px #00DAFF;
@@ -91,7 +87,6 @@ html, body {
     height: 5rem;
     width: 5rem;
 
-    top: 80%;
     margin-left: -10rem;
 }
 
@@ -100,7 +95,6 @@ html, body {
     height: 5rem;
     width: 5rem;
 
-    top: 80%;
     margin-left: -2rem;
 }
 
@@ -109,7 +103,6 @@ html, body {
     height: 5rem;
     width: 5rem;
 
-    top: 80%;
     margin-left: 6rem;
 }
 
