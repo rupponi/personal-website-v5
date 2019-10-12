@@ -4,8 +4,8 @@ import "./navbar.css"
 var menuSelected = false;
 
 function navBarClick(e) {
-    let title = document.getElementById("name-title");
-    let container = document.getElementById("navbar-container");
+    let title = document.getElementById("name-title"),
+    container = document.getElementById("navbar-container");
 
     title.classList.add("animate-title-click");
     container.classList.add("light-navbar");
@@ -23,8 +23,7 @@ function navBarClick(e) {
 }
 
 function menuSelect(e) {
-    let
-    menusymbol = document.getElementById("menu-symbol"),
+    let menusymbol = document.getElementById("menu-symbol"),
     menulist = document.getElementById("menu-container"),
 
     aboutlink = document.getElementById("about-link"),
@@ -35,8 +34,7 @@ function menuSelect(e) {
         menusymbol.classList.remove("animate-title-click");
     });
 
-    let
-    menulengthtarget = menuSelected ? 0 : 6,
+    let menulengthtarget = menuSelected ? 0 : 6,
     aboutpostarget = menuSelected ? 0 : 5,
     resumepostarget = menuSelected ? 0 : 9,
     symbolangletarget = menuSelected ? 0 : 180;
@@ -91,7 +89,7 @@ function selectResume(e) {
     });
 
 
-    window.open("https://rohanupponi.com/res/resume.pdf");
+    window.open("https://rupponi.github.io/res/resume.pdf");
 
     if (menuSelected) {
         menuSelect();

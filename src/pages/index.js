@@ -5,8 +5,7 @@ import { graphql } from "gatsby"
 import "../styles/index.css"
 
 function mailButtonClick() {
-  let targetButton = document.getElementById("mail-button");
-  let linkOpened = false;
+  let targetButton = document.getElementById("mail-button"), linkOpened = false;
 
   targetButton.classList.add("animate-ref-button-click");
   targetButton.addEventListener('animationend', () => {
@@ -19,28 +18,26 @@ function mailButtonClick() {
 }
 
 function githubButtonClick() {
-  let targetButton = document.getElementById("github-button");
-  let linkOpened = false;
+  let targetButton = document.getElementById("github-button"), linkOpened = false;
 
   targetButton.classList.add("animate-ref-button-click");
   targetButton.addEventListener('animationend', () => {
     targetButton.classList.remove("animate-ref-button-click");
     if (!linkOpened) {
-      window.open("https://github.com/rupponi");
+      window.open("https://github.com/rupponi", "_blank");
       linkOpened = true;
     }
   });
 }
 
 function linkedinButtonClick() {
-  let targetButton = document.getElementById("linkedin-button");
-  let linkOpened = false;
+  let targetButton = document.getElementById("linkedin-button"), linkOpened = false;
 
   targetButton.classList.add("animate-ref-button-click");
   targetButton.addEventListener('animationend', () => {
     targetButton.classList.remove("animate-ref-button-click");
     if (!linkOpened) {
-      window.open("https://linkedin.com/in/rohanupponi");
+      window.open("https://linkedin.com/in/rohanupponi", "_blank");
       linkOpened = true;
     }
   });
@@ -72,7 +69,7 @@ export default ({ data }) => (
     <div id = "about">
       <h1 class = "section-title">ABOUT</h1>
       <h1 id = "about-message">
-          I am currently a 2019 graduate in Computer Science from Arizona State University. <br/><br/>
+          I am currently a 2019 graduate in Computer science and new graduate software engineer.<br/><br/>
 
           I like to tackle life one challenge at a time. Whether on the front-end, challenging my
           creativity to design a beautiful interface, or on the backend, to make sure the product
