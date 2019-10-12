@@ -5,37 +5,124 @@ html, body {
     padding: 0;
 }
 
+@-webkit-keyframes loadNavbar {
+    0% {
+        top: -4.5rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}
+@keyframes loadNavbar {
+    0% {
+        top: -4.5rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}
+
 #navbar {
     position: fixed;
     z-index: 10000;
+
+    animation-name: loadNavbar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+    -webkit-animation-name: loadNavbar;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
 }
 
 #introduction {
-    position: absolute;
     color: #fff;
 
     height: 100%;
     width: 100%;
     text-align: center;
+    align-content: center;
+}
+
+@-webkit-keyframes loadIntroMessage {
+    0% {
+        opacity: 0;
+        top: 45%;
+    }
+    100% {
+        opacity: 1;
+        top: 40%;
+    }
+}
+@keyframes loadIntroMessage {
+    0% {
+        opacity: 0;
+        top: 45%;
+    }
+    100% {
+        opacity: 1;
+        top: 40%;
+    }
 }
 
 #intro-message {
     position: absolute;
+    opacity: 0;
     font-family: "Karla", "san-serif";
     font-weight: 100;
     font-size: 1.5em;
 
-    top: 30%;
-    height: 30%;
+    top: 45%;
     margin-left: 10%;
     margin-right: 10%;
+
+    animation-name: loadIntroMessage;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+    -webkit-animation-name: loadIntroMessage;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes loadContactFavicon {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 85%;
+    }
+}
+@keyframes loadContactFavicon {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 85%;
+    }
 }
 
 .ref-cont {
     display: inline-block;
     font-size: 2rem;
 
-    top: 85%;
+    top: 100%;
+
+    animation-name: loadContactFavicon;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+    -webkit-animation-name: loadContactFavicon;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
 }
 .ref-cont:hover {
     box-shadow: 0 0 3px #00DAFF;
@@ -142,7 +229,8 @@ html, body {
 #about-message {
     position: absolute;
     font-family: "Karla", "san-serif";
-    font-size: 1.5em;
+    font-size: 1.25em;
+    font-weight: 100;
 
     top: 30%;
     margin-left: 10%;
