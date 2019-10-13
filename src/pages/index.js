@@ -69,14 +69,28 @@ export default ({ data }) => (
     <div id = "about">
       <h1 class = "section-title">ABOUT</h1>
       <h1 id = "about-message">
-          I am currently a 2019 graduate in Computer science and new graduate software engineer.<br/><br/>
+          Hello world! My name's Rohan and I love to build and build what I love. As a new graduate
+          software engineer, I enjoy building projects with potential for real-world benefits whether
+          for me or for those around me.
+          
+          <br/><br/>
 
-          I like to tackle life one challenge at a time. Whether on the front-end, challenging my
-          creativity to design a beautiful interface, or on the backend, to make sure the product
-          can do its job with maximum efficiency and effectiveness. <br/><br/>
+          Having recently graduated from {" "}
+          <a class = "about-links" target = "_blank" rel = "noopener noreferrer" href = "https://cidse.engineering.asu.edu/">
+            Barrett Honors College at Arizona State University
+          </a>
+          {", I have had opportunity to hone my skills in internships with "}
+          <a class = "about-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.intel.com/content/www/us/en/homepage.html">
+            Intel Corporation
+          </a>
+          {" and "}
+          <a class = "about-links" target = "_blank" rel = "noopener noreferrer" href = "https://stchealth.com/">
+            STC Health
+          </a>
+          {". "}
 
-          Outside of spending hours focused on a computer screen, I enjoy keeping myself going with
-          morning runs and workouts or challenging my inner foodie with something new to try! <br/><br/>
+
+          <br/><br/>
       </h1>
     </div>
 
