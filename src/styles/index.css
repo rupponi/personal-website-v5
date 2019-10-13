@@ -91,38 +91,11 @@ html, body {
     -webkit-animation-timing-function: ease;
 }
 
-@-webkit-keyframes loadContactFavicon {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: 85%;
-    }
-}
-@keyframes loadContactFavicon {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: 85%;
-    }
-}
-
 .ref-cont {
     display: inline-block;
     font-size: 2rem;
 
-    top: 100%;
-
-    animation-name: loadContactFavicon;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-
-    -webkit-animation-name: loadContactFavicon;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease;
+    top: 85%;
 }
 .ref-cont:hover {
     box-shadow: 0 0 3px #00DAFF;
