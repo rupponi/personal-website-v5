@@ -67,7 +67,8 @@ export default ({ data }) => (
     </div>
 
     <div id = "about">
-      <h1 class = "section-title">ABOUT</h1>
+      <h1 class = "section-title">A LITTLE BIT MORE ABOUT ME</h1>
+      <span id = "about-section-break"/>
       <h1 id = "about-message">
           Hello world! My name's Rohan and I love to build and build what I love. As a new graduate
           software engineer, I enjoy building projects with potential for real-world benefits whether
@@ -88,10 +89,13 @@ export default ({ data }) => (
             STC Health
           </a>
           {". "}
-
-
           <br/><br/>
       </h1>
+    </div>
+
+    <div id = "experience">
+      <h1 class = "section-title">WHERE I'VE WORKED</h1>
+      <span id = "experience-section-break"/>
     </div>
 
   </html>

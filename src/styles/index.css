@@ -183,7 +183,50 @@ html, body {
 
 .section-title {
     font-family: "Karla", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 100;
+
     margin-top: 6rem;
+}
+
+@-webkit-keyframes expandBreak {
+    0% {
+        width: 0%;
+        left: -12.5%;
+    }
+    100% {
+        width: 75%;
+        left: 12.5%;
+    }
+}
+@keyframes expandBreak {
+    0% {
+        width: 0%;
+        left: -12.5%;
+    }
+    100% {
+        width: 75%;
+        left: 12.5%;
+    }
+}
+.expand-break {
+    animation-name: expandBreak;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#about-section-break {
+    position: absolute;
+    color: #fff;
+    background-image: radial-gradient(#050B16, white, #050B16);
+    
+    top: 8rem;
+    left: 12.5%;
+
+    height: 0.1rem;
+    width: 75%;
 }
 
 
@@ -205,18 +248,43 @@ html, body {
     font-size: 1.25em;
     font-weight: 100;
 
-    top: 20%;
+    top: 10rem;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .about-links {
-    text-decoration: none;
-    color: white;
+    text-decoration-line: none;
+    color: #004A57;
     font-family: "Karla", "sans-serif";
     font-size: 1em;
     font-weight: 100;
 }
 .about-links:hover {
-    font-weight: 200;
+    color: #00DAFF;
+}
+
+
+
+#experience {
+    position: absolute;
+    color: #fff;
+
+    top: 200%;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+}
+
+#experience-section-break {
+    position: absolute;
+    color: #fff;
+    background-image: radial-gradient(#050B16, white, #050B16);
+    
+    top: 8rem;
+    left: 12.5%;
+
+    height: 0.1rem;
+    width: 75%;
 }

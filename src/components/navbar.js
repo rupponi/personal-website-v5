@@ -3,7 +3,7 @@ import "./navbar.css"
 
 var menuSelected = false;
 
-function navBarClick(e) {
+function navBarClick() {
     let title = document.getElementById("name-title"),
     container = document.getElementById("navbar-container");
 
@@ -22,21 +22,23 @@ function navBarClick(e) {
     }
 }
 
-function menuSelect(e) {
+function menuSelect() {
     let menusymbol = document.getElementById("menu-symbol"),
     menulist = document.getElementById("menu-container"),
 
     aboutlink = document.getElementById("about-link"),
-    resumelink = document.getElementById("resume-link");
+    resumelink = document.getElementById("resume-link"),
+    experiencelink = document.getElementById("experience-link");
 
     menusymbol.classList.add("animate-title-click");
     menusymbol.addEventListener('animationend', () => {
         menusymbol.classList.remove("animate-title-click");
     });
 
-    let menulengthtarget = menuSelected ? 0 : 6,
+    let menulengthtarget = menuSelected ? 0 : 8,
     aboutpostarget = menuSelected ? 0 : 5,
-    resumepostarget = menuSelected ? 0 : 9,
+    experiencepostarget = menuSelected ? 0 : 9,
+    resumepostarget = menuSelected ? 0 : 13,
     symbolangletarget = menuSelected ? 0 : 180;
 
     menusymbol.style.webkitTransform = "rotate("+symbolangletarget+"deg)";
@@ -56,23 +58,36 @@ function menuSelect(e) {
     aboutlink.style.msTransform = "translate(0px, "+aboutpostarget+"rem)";
     aboutlink.style.transform = "translate(0px, "+aboutpostarget+"rem)";
 
+    experiencelink.style.webkitTransform = "translate(0px, "+experiencepostarget+"rem)";
+    experiencelink.style.mozTransform = "translate(0px, "+experiencepostarget+"rem)";
+    experiencelink.style.oTransform = "translate(0px, "+experiencepostarget+"rem)";
+    experiencelink.style.msTransform = "translate(0px, "+experiencepostarget+"rem)";
+    experiencelink.style.transform = "translate(0px, "+experiencepostarget+"rem)";
+
     resumelink.style.webkitTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.mozTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.oTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.msTransform = "translate(0px, "+resumepostarget+"rem)";
     resumelink.style.transform = "translate(0px, "+resumepostarget+"rem)";
+    
 
     menuSelected = !menuSelected;
 }
 
-function selectAbout(e) {
-    let aboutSection = document.getElementById("about");
-    let aboutLink = document.getElementById("about-link");
+function selectAbout() {
+    let aboutSection = document.getElementById("about"),
+    aboutLink = document.getElementById("about-link"),
+    aboutBreak = document.getElementById("about-section-break");
+
 
     aboutLink.classList.add("animate-menu-item-click");
     aboutLink.addEventListener('animationend', () => {
         aboutLink.classList.remove("animate-menu-item-click");
         aboutSection.scrollIntoView();
+        aboutBreak.classList.add("expand-break");
+        aboutBreak.addEventListener('animationend', () => {
+            aboutBreak.classList.remove("expand-break");
+        });
     });
 
     if (menuSelected) {
@@ -80,7 +95,7 @@ function selectAbout(e) {
     }
 }
 
-function selectResume(e) {
+function selectResume() {
     let resumeLink = document.getElementById("resume-link");
 
     resumeLink.classList.add("animate-menu-item-click");
@@ -90,6 +105,26 @@ function selectResume(e) {
 
 
     window.open("https://rupponi.github.io/res/resume.pdf");
+
+    if (menuSelected) {
+        menuSelect();
+    }
+}
+
+function selectExperience() {
+    let experienceSection = document.getElementById("experience"),
+    experiencelink = document.getElementById("experience-link"),
+    experienceBreak = document.getElementById("experience-section-break");
+
+    experiencelink.classList.add("animate-menu-item-click");
+    experiencelink.addEventListener('animationend', () => {
+        experiencelink.classList.remove("animate-menu-item-click");
+        experienceSection.scrollIntoView();
+        experienceBreak.classList.add("expand-break");
+        experienceBreak.addEventListener('animationend', () => {
+            experienceBreak.classList.remove("expand-break");
+        });
+    });
 
     if (menuSelected) {
         menuSelect();
@@ -111,6 +146,7 @@ const NavBar = () => {
             <ul id = "menu-list">
                 <li id = "about-link" class = "list-link unselectable" onClick = {selectAbout}>ABOUT</li>
                 <li id = "resume-link" class = "list-link unselectable" onClick = {selectResume}>RESUME</li>
+                <li id = "experience-link" class = "list-link unselectable" onClick = {selectExperience}>EXPERIENCE</li>
             </ul>
         </div>
     );
