@@ -114,7 +114,7 @@ export default ({ data }) => (
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
-              <img class = "logo" src = "static/img/stc-logo.png" alt="STC Work Experience"/>
+              <img class = "logo" src = "img/stc-logo.png" alt="STC Work Experience"/>
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
@@ -147,7 +147,7 @@ export default ({ data }) => (
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
-              <img class = "logo" src = "static/img/intel-logo.png" alt = "Intel Work Experience"/>
+              <img class = "logo" src = "img/intel-logo.png" alt = "Intel Work Experience"/>
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
