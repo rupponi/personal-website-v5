@@ -1,5 +1,6 @@
 import React from "react"
 import NavBar from "../components/navbar"
+import ExperienceItem from "../components/experience-item"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import "../styles/index.css"
@@ -89,13 +90,87 @@ export default ({ data }) => (
             STC Health
           </a>
           {". "}
+
           <br/><br/>
+
+          I like to tackle life one challenge at a time. Whether on the front-end, challenging my
+          creativity to design a beautiful interface, or on the backend, to make sure the product
+          can do its job with maximum efficiency and effectiveness.
+
+          <br/><br/>
+
+          Outside of spending hours focused on a computer screen, I enjoy keeping myself going with
+          morning runs and workouts or challenging my inner foodie with something new to try!
       </h1>
     </div>
 
     <div id = "experience">
       <h1 class = "section-title">WHERE I'VE WORKED</h1>
       <span id = "experience-section-break"/>
+
+      <div id = "experience-partition">
+        <ExperienceItem>
+          <div class = "title">
+            <div class = "logo-container">
+              <span class = "helper"/>
+              <img class = "logo" src = "static/img/stc-logo.png" alt="STC Work Experience"/>
+            </div>
+            <div class = "outer-title-container">
+              <div class = "inner-title-container">
+                <div class = "experience-title">Scientific Technologies Corporation</div>
+              </div>
+            </div>
+          </div>
+          <span class = "experience-content-break"/>
+          <div class = "experience-content">
+            <ul class = "experience-description">
+              <li>
+                Developed API routing Backend authentication and data retrieval services
+                for front-end web app.
+              </li>
+              <li>
+                Set up CDN delivery of front-end web application with hosted on AWS using CloudFront.
+              </li>
+              <li>
+                Automated AWS infrastructure for immediate deployment and simple scaling of the backend
+                services using CloudFormation, capable of addressing millions of STC's current or 
+                potential users.
+              </li>
+            </ul>
+          </div>
+        </ExperienceItem>
+
+        <br/>
+
+        <ExperienceItem>
+          <div class = "title">
+            <div class = "logo-container">
+              <span class = "helper"/>
+              <img class = "logo" src = "static/img/intel-logo.png" alt = "Intel Work Experience"/>
+            </div>
+            <div class = "outer-title-container">
+              <div class = "inner-title-container">
+                <div class = "experience-title">Intel Corporation</div>
+              </div>
+            </div>
+          </div>
+          <span class = "experience-content-break"/>
+          <div class = "experience-content">
+            <ul class = "experience-description">
+              <li>
+                Developed an extensive unit-level testing framework that eliminated
+                firmware scaling issues and improved widespread error detection across
+                firmware for Intel Optane memory modules through development of
+                extensive unit-level testing using the Unity testing framework. 
+              </li>
+              <li>
+                Wrote hardware optimizations through close communication with
+                hardware team on detailed hardware specifications. 
+              </li>
+            </ul>
+          </div>
+        </ExperienceItem>
+      </div>
     </div>
 
   </html>

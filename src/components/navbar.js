@@ -106,9 +106,7 @@ function selectResume() {
 
     window.open("https://rupponi.github.io/res/resume.pdf");
 
-    if (menuSelected) {
-        menuSelect();
-    }
+    if (menuSelected) {menuSelect();}
 }
 
 function selectExperience() {
