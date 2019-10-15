@@ -130,7 +130,7 @@ export default ({ data }) => (
           <div class = "experience-content">
             <ul class = "experience-description">
               <li>
-                Developed API routing Backend authentication and data retrieval services
+                Developed API routing backend authentication and account data retrieval services
                 for front-end web app.
               </li>
               <li>
