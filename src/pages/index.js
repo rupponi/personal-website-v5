@@ -79,15 +79,15 @@ export default ({ data }) => (
           <br/><br/>
 
           Having recently graduated from {" "}
-          <a class = "about-links" target = "_blank" rel = "noopener noreferrer" href = "https://cidse.engineering.asu.edu/">
+          <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://cidse.engineering.asu.edu/">
             Barrett Honors College at Arizona State University
           </a>
           {", I have had opportunity to hone my skills in internships with "}
-          <a class = "about-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.intel.com/content/www/us/en/homepage.html">
+          <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.intel.com/content/www/us/en/architecture-and-technology/intel-optane-technology.html">
             Intel Corporation
           </a>
           {" and "}
-          <a class = "about-links" target = "_blank" rel = "noopener noreferrer" href = "https://stchealth.com/">
+          <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://stchealth.com/">
             STC Health
           </a>
           {". "}
@@ -118,7 +118,11 @@ export default ({ data }) => (
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
-                <div class = "experience-title">Scientific Technologies Corporation</div>
+                <div class = "experience-title">Software Development Intern {" "}
+                  <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://stchealth.com/">
+                    @ Scientific Technologies Corporation
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -151,7 +155,11 @@ export default ({ data }) => (
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
-                <div class = "experience-title">Intel Corporation</div>
+                <div class = "experience-title">Software Engineering Intern {" "}
+                  <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.intel.com/content/www/us/en/architecture-and-technology/intel-optane-technology.html">
+                    @ Intel Corporation
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -171,6 +179,78 @@ export default ({ data }) => (
             </ul>
           </div>
         </ExperienceItem>
+
+        <br/>
+
+        <ExperienceItem>
+          <div class = "title">
+            <div class = "logo-container">
+              <span class = "helper"/>
+              <img class = "logo" src = "img/az-supreme-court-logo.png" alt = "AZ Supreme Court Work Experience"/>
+            </div>
+            <div class = "outer-title-container">
+              <div class = "inner-title-container">
+                <div class = "experience-title">Software Development Extern {" "}
+                  <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.azcourts.gov/AZSupremeCourt">
+                    @ Arizona Supreme Court
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class = "experience-content-break"/>
+          <div class = "experience-content">
+            <ul class = "experience-description">
+              <li>
+                Created a GUI viewing tool for querying a SQL database of court cases,
+                streamlining front-end interaction with digital database and formatting
+                cases to different templates based on case type.
+              </li>
+              <li>
+                Created and implemented test scripts to debug the Supreme Court Case
+                Management System, providing patches and confirming system integrity
+                for the v 47.0 system update.
+              </li>
+            </ul>
+          </div>
+        </ExperienceItem>
+
+        <br/>
+
+        <ExperienceItem>
+          <div class = "title">
+            <div class = "logo-container">
+              <span class = "helper"/>
+              <img class = "logo" src = "img/asu-logo.png" alt = "Arizona State University Work Experience"/>
+            </div>
+            <div class = "outer-title-container">
+              <div class = "inner-title-container">
+                <div class = "experience-title">Undergraduate Teaching Assistant {" "}
+                  <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://cidse.engineering.asu.edu/teaching-research-assistantships-fellowships-awards/">
+                    @ Arizona State University
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class = "experience-content-break"/>
+          <div class = "experience-content">
+            <ul class = "experience-description">
+              <li>
+                Improved student grades by an average of one letter grade relative
+                to standard average through hosting crash-course review sessions for
+                students outside lecture to aid in developing more intuitive
+                understanding of object-oriented programming with Java.
+              </li>
+              <li>
+                Engaged student day-to-day comprehension through administering and guiding
+                students on planned weekly in-class coding exercises.
+              </li>
+            </ul>
+          </div>
+        </ExperienceItem>
+
+
       </div>
     </div>
 
