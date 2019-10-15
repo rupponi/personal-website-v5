@@ -1,6 +1,6 @@
 html, body {
     scroll-behavior: smooth;
-    background: #050B16;
+    background: #000C21;
     margin: 0;
     padding: 0;
 }
@@ -254,22 +254,6 @@ html, body {
     text-align: justify;
 }
 
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
-    #about-message {
-        font-size: 0.8rem;
-    }
-}
-
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-    #about-message {
-        font-size: 1rem;
-    }
-}
-
 .about-links {
     text-decoration-line: none;
     color: #004A57;
@@ -382,8 +366,46 @@ and (max-device-width: 1024px) {
 }
 
 .experience-description {
-    font-size: 15px;
+    font-size: 1.2rem;
 
     margin-left: 0.7rem;
     margin-right: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* MEDIA QUERIES FOR MOBILE SCALING *************************/
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    #about-message {
+        font-size: 0.8rem;
+    }
+
+    .experience-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    #about-message {
+        font-size: 1rem;
+    }
+
+    .experience-description {
+        font-size: 1rem;
+    }
 }
