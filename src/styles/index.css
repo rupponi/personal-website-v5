@@ -398,6 +398,10 @@ and (max-device-width: 480px) {
         font-size: 0.9rem;
     }
 
+    #experience {
+        height: 200%;
+    }
+
     .section-title {
         font-size: 1.25rem;
     }
