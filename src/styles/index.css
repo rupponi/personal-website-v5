@@ -390,8 +390,12 @@ html, body {
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
+    #intro-message {
+        font-size: 1rem;
+    }
+
     #about-message {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .section-title {
@@ -415,6 +419,10 @@ and (max-device-width: 480px) {
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
+    #intro-message {
+        font-size: 1rem;
+    }
+
     #about-message {
         font-size: 1rem;
     }
