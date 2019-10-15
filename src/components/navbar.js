@@ -104,7 +104,7 @@ function selectResume() {
     });
 
 
-    window.open("https://rupponi.github.io/res/resume.pdf");
+    window.open("res/resume.pdf");
 
     if (menuSelected) {menuSelect();}
 }
