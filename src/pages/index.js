@@ -47,6 +47,7 @@ function linkedinButtonClick() {
 export default ({ data }) => (
   <html>
     <link href = "https://fonts.googleapis.com/css?family=Karla" rel = "stylesheet"></link>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
 
     <Helmet>
       <meta charSet = "utf-8"/>
