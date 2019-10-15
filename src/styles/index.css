@@ -245,7 +245,7 @@ html, body {
 #about-message {
     position: absolute;
     font-family: "Karla", "san-serif";
-    font-size: 125%;
+    font-size: 1.25rem;
     font-weight: 100;
 
     top: 10rem;
@@ -370,5 +370,4 @@ html, body {
 
     margin-left: 0.7rem;
     margin-right: 3rem;
-    text-align: justify;
 }
