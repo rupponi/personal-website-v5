@@ -100,8 +100,8 @@ export default ({ data }) => (
 
           <br/><br/>
 
-          Outside of spending hours focused on a computer screen, I enjoy keeping myself going with
-          morning runs and workouts or challenging my inner foodie with something new to try!
+          When I'm not staring at a computer screen, I enjoy keeping myself going with
+          morning runs and challenging my inner foodie with something new to try!
       </h1>
     </div>
 
@@ -125,6 +125,9 @@ export default ({ data }) => (
                 </div>
               </div>
             </div>
+          </div>
+          <div class = "experience-timeline">
+            (August 2018 - May 2019)
           </div>
           <span class = "experience-content-break"/>
           <div class = "experience-content">
@@ -163,6 +166,9 @@ export default ({ data }) => (
               </div>
             </div>
           </div>
+          <div class = "experience-timeline">
+            (May 2018 - February 2019)
+          </div>
           <span class = "experience-content-break"/>
           <div class = "experience-content">
             <ul class = "experience-description">
@@ -197,6 +203,9 @@ export default ({ data }) => (
                 </div>
               </div>
             </div>
+          </div>
+          <div class = "experience-timeline">
+            (June 2017 - August 2017)
           </div>
           <span class = "experience-content-break"/>
           <div class = "experience-content">
@@ -233,6 +242,9 @@ export default ({ data }) => (
               </div>
             </div>
           </div>
+          <div class = "experience-timeline">
+            (January 2017 - May 2017)
+          </div>
           <span class = "experience-content-break"/>
           <div class = "experience-content">
             <ul class = "experience-description">
@@ -249,6 +261,8 @@ export default ({ data }) => (
             </ul>
           </div>
         </ExperienceItem>
+
+        <br/>
 
 
       </div>

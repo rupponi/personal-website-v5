@@ -183,10 +183,10 @@ html, body {
 
 .section-title {
     font-family: "Karla", "sans-serif";
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 100;
 
-    margin-top: 6rem;
+    margin-top: 5.5rem;
 }
 
 @-webkit-keyframes expandBreak {
@@ -236,7 +236,7 @@ html, body {
     color: #fff;
 
     top: 100%;
-    height: 150%;
+    height: 100%;
     width: 100%;
 
     text-align: center;
@@ -271,8 +271,8 @@ html, body {
     position: absolute;
     color: #fff;
 
-    top: 250%;
-    height: 175%;
+    top: 200%;
+    height: 100%;
     width: 100%;
 
     text-align: center;
@@ -358,7 +358,16 @@ html, body {
     height: 0.1rem;
     width: 90%;
 
+    margin-top: 0.1rem;
     left: 5%;
+}
+
+.experience-timeline {
+    color: gray;
+    font-size: 1.2rem;
+
+    text-align: left;
+    margin-left: 8.5%;
 }
 
 .experience-content {
@@ -367,7 +376,7 @@ html, body {
 }
 
 .experience-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     margin-left: 0.7rem;
     margin-right: 3rem;
@@ -415,6 +424,10 @@ and (max-device-width: 480px) {
         font-size: 1rem;
     }
 
+    .experience-timeline {
+        font-size: 0.9rem;
+    }
+
     .experience-description {
         font-size: 0.8rem;
     }
@@ -447,6 +460,10 @@ and (max-device-width: 1024px) {
 
     .experience-title {
         font-size: 1.2rem;
+    }
+
+    .experience-timeline {
+        font-size: 0.9rem;
     }
 
     .experience-description {
