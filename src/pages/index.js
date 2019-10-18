@@ -47,6 +47,7 @@ function linkedinButtonClick() {
 export default ({ data }) => (
   <html>
     <link href = "https://fonts.googleapis.com/css?family=Karla" rel = "stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
     <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
 
     <Helmet>
@@ -110,7 +111,7 @@ export default ({ data }) => (
       <span id = "experience-section-break"/>
 
       <div id = "experience-partition">
-        <ExperienceItem>
+        <ExperienceItem id = "stc-experience-item">
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
