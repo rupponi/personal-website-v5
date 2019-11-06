@@ -76,18 +76,13 @@ function menuSelect() {
 
 function selectAbout() {
     let aboutSection = document.getElementById("about"),
-    aboutLink = document.getElementById("about-link"),
-    aboutBreak = document.getElementById("about-section-break");
+    aboutLink = document.getElementById("about-link");
 
 
     aboutLink.classList.add("animate-menu-item-click");
     aboutLink.addEventListener('animationend', () => {
         aboutLink.classList.remove("animate-menu-item-click");
         aboutSection.scrollIntoView();
-        aboutBreak.classList.add("expand-break");
-        aboutBreak.addEventListener('animationend', () => {
-            aboutBreak.classList.remove("expand-break");
-        });
     });
 
     if (menuSelected) {
@@ -111,17 +106,12 @@ function selectResume() {
 
 function selectExperience() {
     let experienceSection = document.getElementById("experience"),
-    experiencelink = document.getElementById("experience-link"),
-    experienceBreak = document.getElementById("experience-section-break");
+    experiencelink = document.getElementById("experience-link");
 
     experiencelink.classList.add("animate-menu-item-click");
     experiencelink.addEventListener('animationend', () => {
         experiencelink.classList.remove("animate-menu-item-click");
         experienceSection.scrollIntoView();
-        experienceBreak.classList.add("expand-break");
-        experienceBreak.addEventListener('animationend', () => {
-            experienceBreak.classList.remove("expand-break");
-        });
     });
 
     if (menuSelected) {

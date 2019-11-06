@@ -1,6 +1,5 @@
 import React from "react"
 import NavBar from "../components/navbar"
-import ExperienceItem from "../components/experience-item"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import "../styles/index.css"
@@ -70,9 +69,9 @@ export default ({ data }) => (
     </div>
 
     <div id = "about">
-      <h1 class = "section-title">A LITTLE BIT MORE ABOUT ME</h1>
-      <span id = "about-section-break"/>
+      <h1 class = "section-title">A Little Bit More About Me</h1>
       <h1 id = "about-message">
+
           Hello world! My name's Rohan and I love to build and build what I love. As a new graduate
           software engineer, I enjoy building projects with potential for real-world benefits whether
           for me or for those around me.
@@ -103,19 +102,18 @@ export default ({ data }) => (
 
           When I'm not staring at a computer screen, I enjoy keeping myself going with
           morning runs and challenging my inner foodie with something new to try!
+
       </h1>
     </div>
 
     <div id = "experience">
-      <h1 class = "section-title">WHERE I'VE WORKED</h1>
-      <span id = "experience-section-break"/>
-
+      <h1 class = "section-title">Where I've Worked</h1>
       <div id = "experience-partition">
-        <ExperienceItem id = "stc-experience-item">
+        <div class = "experience-item">
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
-              <img class = "logo" src = "img/stc-logo.png" alt="STC Work Experience"/>
+              <a rel = "noopener noreferrer" target = "_blank" href = "https://stchealth.com"><img class = "logo" src = "img/stc-logo.png" alt="STC Work Experience"/></a>
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
@@ -147,20 +145,20 @@ export default ({ data }) => (
               </li>
             </ul>
           </div>
-        </ExperienceItem>
+        </div>
 
         <br/>
 
-        <ExperienceItem>
+        <div class = "experience-item">
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
-              <img class = "logo" src = "img/intel-logo.png" alt = "Intel Work Experience"/>
+              <a rel = "noopener noreferrer" target = "_blank" href = "https://www.intel.com/content/www/us/en/architecture-and-technology/optane-memory.html"><img class = "logo" src = "img/intel-logo.png" alt = "Intel Work Experience"/></a>
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
                 <div class = "experience-title">Software Engineering Intern {" "}
-                  <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.intel.com/content/www/us/en/architecture-and-technology/intel-optane-technology.html">
+                  <a class = "external-links" target = "_blank" rel = "noopener noreferrer" href = "https://www.intel.com/content/www/us/en/architecture-and-technology/optane-memory.html">
                     @ Intel Corporation
                   </a>
                 </div>
@@ -185,15 +183,15 @@ export default ({ data }) => (
               </li>
             </ul>
           </div>
-        </ExperienceItem>
+        </div>
 
         <br/>
 
-        <ExperienceItem>
+        <div class = "experience-item">
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
-              <img class = "logo" src = "img/az-supreme-court-logo.png" alt = "AZ Supreme Court Work Experience"/>
+              <a rel = "noopener noreferrer" target = "_blank" href = "https://www.azcourts.gov/AZSupremeCourt"><img class = "logo" src = "img/az-supreme-court-logo.png" alt = "AZ Supreme Court Work Experience"/></a>
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
@@ -223,15 +221,15 @@ export default ({ data }) => (
               </li>
             </ul>
           </div>
-        </ExperienceItem>
+        </div>
 
         <br/>
 
-        <ExperienceItem>
+        <div class = "experience-item">
           <div class = "title">
             <div class = "logo-container">
               <span class = "helper"/>
-              <img class = "logo" src = "img/asu-logo.png" alt = "Arizona State University Work Experience"/>
+              <a rel = "noopener noreferrer" target = "_blank" href = "https://cidse.engineering.asu.edu/teaching-research-assistantships-fellowships-awards/"><img class = "logo" src = "img/asu-logo.png" alt = "Arizona State University Work Experience"/></a>
             </div>
             <div class = "outer-title-container">
               <div class = "inner-title-container">
@@ -261,10 +259,13 @@ export default ({ data }) => (
               </li>
             </ul>
           </div>
-        </ExperienceItem>
+        </div>
+
+        <div id = "signature">
+          <h3>© 2019 Rohan Upponi</h3>
+        </div>
 
         <br/>
-
 
       </div>
     </div>
