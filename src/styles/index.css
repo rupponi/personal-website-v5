@@ -13,6 +13,14 @@ html, body {
         top: 0rem;
     }
 }
+@-moz-keyframes loadNavbar {
+    0% {
+        top: -4.5rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}
 @keyframes loadNavbar {
     0% {
         top: -4.5rem;
@@ -26,18 +34,12 @@ html, body {
     position: fixed;
     z-index: 10000;
 
-    animation-name: loadNavbar;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-
-    -webkit-animation-name: loadNavbar;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease;
+    -webkit-animation: loadNavbar 1s ease forwards;
+    animation: loadNavbar 1s ease forwards;
 }
 
 #introduction {
+    position: absolute;
     color: #fff;
 
     height: 100%;
@@ -78,17 +80,8 @@ html, body {
     margin-left: 10%;
     margin-right: 10%;
 
-    animation-name: loadIntroMessage;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-
-    -webkit-animation-name: loadIntroMessage;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease;
+    -webkit-animation: loadIntroMessage 2s ease 1s forwards;
+    animation: loadIntroMessage 2s ease 1s forwards;
 }
 
 .ref-cont {
@@ -189,34 +182,6 @@ html, body {
     margin-top: 5.5rem;
 }
 
-@-webkit-keyframes expandBreak {
-    0% {
-        width: 0%;
-        left: -12.5%;
-    }
-    100% {
-        width: 75%;
-        left: 12.5%;
-    }
-}
-@keyframes expandBreak {
-    0% {
-        width: 0%;
-        left: -12.5%;
-    }
-    100% {
-        width: 75%;
-        left: 12.5%;
-    }
-}
-.expand-break {
-    animation-name: expandBreak;
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-}
-
 #about-section-break {
     position: absolute;
     color: #fff;
@@ -229,14 +194,11 @@ html, body {
     width: 75%;
 }
 
-
-
 #about {
     position: absolute;
     color: #fff;
 
     top: 100%;
-    height: 100%;
     width: 100%;
 
     text-align: center;
@@ -278,18 +240,6 @@ html, body {
     text-align: center;
 }
 
-#experience-section-break {
-    position: absolute;
-    color: #fff;
-    background-image: radial-gradient(#050B16, white, #050B16);
-    
-    top: 8rem;
-    left: 12.5%;
-
-    height: 0.1rem;
-    width: 75%;
-}
-
 #experience-partition {
     position: absolute;
     font-family: "Karla", "sans-serif";
@@ -325,18 +275,51 @@ html, body {
     vertical-align: middle;
 }
 
+@-webkit-keyframes logoPulse {
+    0% {
+        box-shadow: 0 0 5px #00DAFF;
+    }
+    50% {
+        box-shadow: 0 0 10px #00DAFF;
+    }
+    100% {
+        box-shadow: 0 0 5px #00DAFF;
+    }
+}
+@keyframes logoPulse {
+    0% {
+        box-shadow: 0 0 5px #00DAFF;
+    }
+    50% {
+        box-shadow: 0 0 10px #00DAFF;
+    }
+    100% {
+        box-shadow: 0 0 5px #00DAFF;
+    }
+}
+
 .logo {
     height: 4rem;
     width: 4rem;
 
+    margin-right: 0.5rem;
+
     max-height: 5rem;
     max-width: 5rem;
+    border-radius: 50%;
 
     vertical-align: middle;
+
+    -webkit-animation: logoPulse 1.5s linear infinite forwards;
+    animation: logoPulse 1.5s linear infinite forwards;
+}
+.logo:active {
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .experience-title {
-    font-size: 1.5rem;
+    font-size: 1.3em;
 }
 
 .outer-title-container {
@@ -362,15 +345,25 @@ html, body {
     left: 5%;
 }
 
+.experience-item {
+    width: 100%;
+
+    padding: 1rem;
+
+    box-shadow: 0 0 3px #00DAFF;
+}
+
 .experience-timeline {
     color: gray;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     text-align: left;
-    margin-left: 8.5%;
+    margin-left: 5rem;
+    margin-top: 0rem;
 }
 
 .experience-content {
+    color: #FFF;
     width: 100%;
     text-align: left;
 }
@@ -382,17 +375,18 @@ html, body {
     margin-right: 3rem;
 }
 
+#signature {
+    position: relative;
+    color: #004A57;
 
+    top: 2rem;
 
-
-
-
-
-
-
-
-
-
+    font-family: "Noto Sans", "sans-serif";
+    font-size: 0.8rem;
+}
+#signature:hover {
+    color: #00DAFF;
+}
 
 /********************* MEDIA QUERIES FOR MOBILE SCALING *************************/
 
@@ -404,7 +398,7 @@ and (max-device-width: 480px) {
     }
 
     #about-message {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #experience {
