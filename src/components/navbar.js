@@ -30,9 +30,9 @@ function menuSelect() {
     resumelink = document.getElementById("resume-link"),
     experiencelink = document.getElementById("experience-link");
 
-    menusymbol.classList.add("animate-title-click");
+    menusymbol.classList.add("animate-symbol-click");
     menusymbol.addEventListener('animationend', () => {
-        menusymbol.classList.remove("animate-title-click");
+        menusymbol.classList.remove("animate-symbol-click");
     });
 
     let menulengthtarget = menuSelected ? 0 : 8,

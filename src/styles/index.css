@@ -4,6 +4,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none !important;
+}
 
 @-webkit-keyframes loadNavbar {
     0% {
@@ -40,7 +43,7 @@ html, body {
 
 #introduction {
     position: absolute;
-    color: #fff;
+    color: white;
 
     height: 100%;
     width: 100%;
@@ -93,46 +96,14 @@ html, body {
 .ref-cont:hover {
     box-shadow: 0 0 3px #00DAFF;
 }
+.ref-cont:active {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
 
-@-webkit-keyframes refButtonClick {
-    0% {
-        height: 5rem;
-        width: 5rem;
-        font-size: 2rem;
-    }
-    50% {
-        height: 4rem;
-        width: 4rem;
-        font-size: 1.75rem;
-    }
-    100% {
-        height: 5rem;
-        width: 5rem;
-        font-size: 2rem;
-    }
-}
-@keyframes refButtonClick {
-    0% {
-        height: 5rem;
-        width: 5rem;
-        font-size: 2rem;
-    }
-    50% {
-        height: 4rem;
-        width: 4rem;
-        font-size: 1.75rem;
-    }
-    100% {
-        height: 5rem;
-        width: 5rem;
-        font-size: 2rem;
-    }
-}
-.animate-ref-button-click {
-    animation-name: refButtonClick;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 #mail-button {
@@ -159,19 +130,18 @@ html, body {
     margin-left: 6rem;
 }
 
-#mail-ref {
-    margin-top: 30%;
-    color: #fff;
+.ref {
+    margin-top: 35%;
+    color: white;
 }
+.ref:active {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
 
-#github-ref {
-    margin-top: 30%;
-    color: #fff;
-}
-
-#linkedin-ref {
-    margin-top: 30%;
-    color: #fff;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 .section-title {
@@ -184,7 +154,7 @@ html, body {
 
 #about-section-break {
     position: absolute;
-    color: #fff;
+    color: white;
     background-image: radial-gradient(#050B16, white, #050B16);
     
     top: 8rem;
@@ -196,7 +166,7 @@ html, body {
 
 #about {
     position: absolute;
-    color: #fff;
+    color: white;
 
     top: 100%;
     width: 100%;
@@ -280,7 +250,7 @@ html, body {
         box-shadow: 0 0 5px #00DAFF;
     }
     50% {
-        box-shadow: 0 0 10px #00DAFF;
+        box-shadow: 0 0 15px #00DAFF;
     }
     100% {
         box-shadow: 0 0 5px #00DAFF;
@@ -291,7 +261,7 @@ html, body {
         box-shadow: 0 0 5px #00DAFF;
     }
     50% {
-        box-shadow: 0 0 10px #00DAFF;
+        box-shadow: 0 0 15px #00DAFF;
     }
     100% {
         box-shadow: 0 0 5px #00DAFF;
@@ -311,7 +281,19 @@ html, body {
     vertical-align: middle;
 
     -webkit-animation: logoPulse 1.5s linear infinite forwards;
+    -moz-animation: logoPulse 1.5s linear infinite forwards;
     animation: logoPulse 1.5s linear infinite forwards;
+}
+.logo:hover {
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+
+    -webkit-transform: scale(1.1);
+    -moz-transition: scale(1.1);
+    -o-transition: scale(1.1);
+    transform: scale(1.1);
 }
 .logo:active {
     height: 3.5rem;
@@ -377,14 +359,18 @@ html, body {
 
 #signature {
     position: relative;
-    color: #004A57;
-
     top: 2rem;
+}
+
+#signature-link {
+    color: #004A57;
+    text-decoration: none;
 
     font-family: "Noto Sans", "sans-serif";
     font-size: 0.8rem;
+    font-weight: lighter;
 }
-#signature:hover {
+#signature-link:hover {
     color: #00DAFF;
 }
 

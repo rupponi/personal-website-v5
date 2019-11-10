@@ -1,0 +1,85 @@
+#home-link {
+    display: table-cell;
+    text-decoration: none;
+    vertical-align: middle;
+
+    color: #00DAFF;
+    font-family: "Noto Sans", "sans-serif";
+    font-size: 1.5rem;
+
+    line-height: 1.5rem;
+}
+
+#error-message-container {
+    height: 100%;
+    width: 100%;
+}
+
+#error-404 {
+    position: absolute;
+    color: #004A57;
+    font-family: "Noto Sans", "sans-serif";
+    font-size: 10rem;
+
+    width: 100%;
+
+    text-align: center;
+
+    top: 15%;
+}
+
+#page-not-found {
+    position: absolute;
+    color: #004A57;
+    font-family: "Noto Sans", "sans-serif";
+    font-size: 4rem;
+
+    width: 100%;
+
+    text-align: center;
+
+    top: 40%;
+}
+
+#home-button {
+    position: absolute;
+    display: table;
+
+    height: 5rem;
+    width: 8rem;
+
+    box-shadow: 0 0 5px #00DAFF;
+    text-align: center;
+
+    top: 60%;
+    left: calc(50% - 4rem);
+}
+#home-button:hover {
+    box-shadow: 0 0 15px #00DAFF;
+}
+
+
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    #error-404 {
+        font-size: 8rem;
+    }
+    #page-not-found {
+        top: 45%;
+        font-size: 2rem;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    #error-404 {
+        font-size: 9rem;
+    }
+    #page-not-found {
+        top: 45%;
+        font-size: 2rem;
+    }
+}

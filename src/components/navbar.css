@@ -29,11 +29,6 @@
     font-weight: 100;
     margin-top: 1.5rem;
     margin-left: 6rem;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 #title-panel {
@@ -129,7 +124,7 @@
     }
     50% {
         color: #00DAFF;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     100% {
         color: #FFF;
@@ -143,7 +138,7 @@
     }
     50% {
         color: #00DAFF;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     100% {
         color: #FFF;
@@ -151,12 +146,40 @@
     }
 }
 .animate-title-click {
-    animation-name: titleClick;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: titleClick 0.1s linear forwards;
 }
 
+@-webkit-keyframes symbolClick {
+    0% {
+        color: #FFF;
+        font-size: 1.5rem;
+    }
+    50% {
+        color: #00DAFF;
+        font-size: 0.5rem;
+    }
+    100% {
+        color: #FFF;
+        font-size: 1.5rem;
+    }
+}
+@keyframes symbolClick {
+    0% {
+        color: #FFF;
+        font-size: 1.5rem;
+    }
+    50% {
+        color: #00DAFF;
+        font-size: 0.5rem;
+    }
+    100% {
+        color: #FFF;
+        font-size: 1.5rem;
+    }
+}
+.animate-symbol-click {
+    animation: symbolClick 0.1s linear forwards;
+}
 
 
 @-webkit-keyframes lightNavBar {
