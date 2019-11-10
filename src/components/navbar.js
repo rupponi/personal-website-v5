@@ -23,52 +23,52 @@ function navBarClick() {
 }
 
 function menuSelect() {
-    let menusymbol = document.getElementById("menu-symbol"),
-    menulist = document.getElementById("menu-container"),
+    let menuSymbol = document.getElementById("menu-symbol"),
+    menuList = document.getElementById("menu-container"),
 
-    aboutlink = document.getElementById("about-link"),
-    resumelink = document.getElementById("resume-link"),
-    experiencelink = document.getElementById("experience-link");
+    aboutLink = document.getElementById("about-link"),
+    resumeLink = document.getElementById("resume-link"),
+    experienceLink = document.getElementById("experience-link");
 
-    menusymbol.classList.add("animate-symbol-click");
-    menusymbol.addEventListener('animationend', () => {
-        menusymbol.classList.remove("animate-symbol-click");
+    menuSymbol.classList.add("animate-symbol-click");
+    menuSymbol.addEventListener('animationend', () => {
+        menuSymbol.classList.remove("animate-symbol-click");
     });
 
-    let menulengthtarget = menuSelected ? 0 : 8,
-    aboutpostarget = menuSelected ? 0 : 5,
-    experiencepostarget = menuSelected ? 0 : 9,
-    resumepostarget = menuSelected ? 0 : 13,
-    symbolangletarget = menuSelected ? 0 : 180;
+    let menuLengthTarget = menuSelected ? 0 : 8,
+    aboutPosTarget = menuSelected ? 0 : 5,
+    experiencePosTarget = menuSelected ? 0 : 9,
+    resumePosTarget = menuSelected ? 0 : 13,
+    symbolAngleTarget = menuSelected ? 0 : 180;
 
-    menusymbol.style.webkitTransform = "rotate("+symbolangletarget+"deg)";
-    menusymbol.style.mozTransform = "rotate("+symbolangletarget+"deg)";
-    menusymbol.style.oTransform = "rotate("+symbolangletarget+"deg)";
-    menusymbol.style.msTransform = "rotate("+symbolangletarget+"deg)";
-    menusymbol.style.transform = "rotate("+symbolangletarget+"deg)";
+    menuSymbol.style.webkitTransform = "rotate("+symbolAngleTarget+"deg)";
+    menuSymbol.style.mozTransform = "rotate("+symbolAngleTarget+"deg)";
+    menuSymbol.style.oTransform = "rotate("+symbolAngleTarget+"deg)";
+    menuSymbol.style.msTransform = "rotate("+symbolAngleTarget+"deg)";
+    menuSymbol.style.transform = "rotate("+symbolAngleTarget+"deg)";
 
-    menulist.style.mozTransform = "scale(1, "+menulengthtarget+")";
-    menulist.style.oTransform = "scale(1, "+menulengthtarget+")";
-    menulist.style.msTransform = "scale(1, "+menulengthtarget+")";
-    menulist.style.transform = "scale(1, "+menulengthtarget+")";
+    menuList.style.mozTransform = "scale(1, "+menuLengthTarget+")";
+    menuList.style.oTransform = "scale(1, "+menuLengthTarget+")";
+    menuList.style.msTransform = "scale(1, "+menuLengthTarget+")";
+    menuList.style.transform = "scale(1, "+menuLengthTarget+")";
 
-    aboutlink.style.webkitTransform = "translate(0px, "+aboutpostarget+"rem)";
-    aboutlink.style.mozTransform = "translate(0px, "+aboutpostarget+"rem)";
-    aboutlink.style.oTransform = "translate(0px, "+aboutpostarget+"rem)";
-    aboutlink.style.msTransform = "translate(0px, "+aboutpostarget+"rem)";
-    aboutlink.style.transform = "translate(0px, "+aboutpostarget+"rem)";
+    aboutLink.style.webkitTransform = "translate(0px, "+aboutPosTarget+"rem)";
+    aboutLink.style.mozTransform = "translate(0px, "+aboutPosTarget+"rem)";
+    aboutLink.style.oTransform = "translate(0px, "+aboutPosTarget+"rem)";
+    aboutLink.style.msTransform = "translate(0px, "+aboutPosTarget+"rem)";
+    aboutLink.style.transform = "translate(0px, "+aboutPosTarget+"rem)";
 
-    experiencelink.style.webkitTransform = "translate(0px, "+experiencepostarget+"rem)";
-    experiencelink.style.mozTransform = "translate(0px, "+experiencepostarget+"rem)";
-    experiencelink.style.oTransform = "translate(0px, "+experiencepostarget+"rem)";
-    experiencelink.style.msTransform = "translate(0px, "+experiencepostarget+"rem)";
-    experiencelink.style.transform = "translate(0px, "+experiencepostarget+"rem)";
+    experienceLink.style.webkitTransform = "translate(0px, "+experiencePosTarget+"rem)";
+    experienceLink.style.mozTransform = "translate(0px, "+experiencePosTarget+"rem)";
+    experienceLink.style.oTransform = "translate(0px, "+experiencePosTarget+"rem)";
+    experienceLink.style.msTransform = "translate(0px, "+experiencePosTarget+"rem)";
+    experienceLink.style.transform = "translate(0px, "+experiencePosTarget+"rem)";
 
-    resumelink.style.webkitTransform = "translate(0px, "+resumepostarget+"rem)";
-    resumelink.style.mozTransform = "translate(0px, "+resumepostarget+"rem)";
-    resumelink.style.oTransform = "translate(0px, "+resumepostarget+"rem)";
-    resumelink.style.msTransform = "translate(0px, "+resumepostarget+"rem)";
-    resumelink.style.transform = "translate(0px, "+resumepostarget+"rem)";
+    resumeLink.style.webkitTransform = "translate(0px, "+resumePosTarget+"rem)";
+    resumeLink.style.mozTransform = "translate(0px, "+resumePosTarget+"rem)";
+    resumeLink.style.oTransform = "translate(0px, "+resumePosTarget+"rem)";
+    resumeLink.style.msTransform = "translate(0px, "+resumePosTarget+"rem)";
+    resumeLink.style.transform = "translate(0px, "+resumePosTarget+"rem)";
     
 
     menuSelected = !menuSelected;
@@ -106,11 +106,11 @@ function selectResume() {
 
 function selectExperience() {
     let experienceSection = document.getElementById("experience"),
-    experiencelink = document.getElementById("experience-link");
+    experienceLink = document.getElementById("experience-link");
 
-    experiencelink.classList.add("animate-menu-item-click");
-    experiencelink.addEventListener('animationend', () => {
-        experiencelink.classList.remove("animate-menu-item-click");
+    experienceLink.classList.add("animate-menu-item-click");
+    experienceLink.addEventListener('animationend', () => {
+        experienceLink.classList.remove("animate-menu-item-click");
         experienceSection.scrollIntoView();
     });
 

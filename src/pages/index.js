@@ -24,9 +24,9 @@ export default ({ data }) => (
       <h1 id = "intro-message">My name is {data.site.siteMetadata.author} and {data.site.siteMetadata.description}</h1>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
-      <div id = "mail-button" class="ref-cont"><a rel = "noopener noreferrer" target = "_blank" href = "mailto: upponirohan@gmail.com"><i class="ref fa fa-envelope-o"/></a></div>
-      <div id = "github-button" class="ref-cont"><a rel = "noopener noreferrer" target = "_blank" href = "https://github.com/rupponi"><i class="ref fa fa-github"/></a></div>
-      <div id = "linkedin-button" class="ref-cont"><a rel = "noopener noreferrer" target = "_blank" href = "https://linkedin.com/in/rohanupponi"><i class = "ref fa fa-linkedin"/></a></div>
+      <a class = "ref-link" rel = "noopener noreferrer" target = "_blank" href = "mailto: upponirohan@gmail.com"><div id = "mail-button" class="ref-cont"><i class="ref fa fa-envelope-o"/></div></a>
+      <a class = "ref-link" rel = "noopener noreferrer" target = "_blank" href = "https://github.com/rupponi"><div id = "github-button" class="ref-cont"><i class="ref fa fa-github"/></div></a>
+      <a class = "ref-link" rel = "noopener noreferrer" target = "_blank" href = "https://linkedin.com/in/rohanupponi"><div id = "linkedin-button" class="ref-cont"><i class = "ref fa fa-linkedin"/></div></a>
     </div>
 
     <div id = "about">
