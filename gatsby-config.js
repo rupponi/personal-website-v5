@@ -3,6 +3,24 @@ module.exports = {
     title: `Rohan Upponi | Software Engineer`,
     description: `I'm an aspiring software engineer and computer science graduate who loves to work on new and upcoming technologies`,
     author: `Rohan Upponi`,
+    menuLinks: [
+      {
+        name: 'introduction',
+        link: '/intro'
+      },
+      {
+        name: 'about',
+        link: '/about'
+      },
+      {
+        name: 'experience',
+        link: '/experience'
+      },
+      {
+        name: 'work',
+        link: '/work'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
