@@ -1,0 +1,14 @@
+#introduction {
+    position: absolute;
+    color: white;
+
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+#work-hello {
+    font-size: 20rem;
+    color: #fff;
+}

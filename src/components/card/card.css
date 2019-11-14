@@ -1,0 +1,41 @@
+#card-component {
+    position: relative;
+    background: #0A111D;
+
+    height: 25rem;
+    width: 25rem;
+
+    padding-top: 1rem;
+
+    border-radius: 0.25rem;
+    box-shadow: 0 0 5px black;
+}
+#card-component:hover {
+    background: #131F35;
+}
+#card-component:active {
+    background: #131F35;
+    box-shadow: 0 0 5px #00DAFF;
+
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+
+
+/********** MEDIA QUERIES FOR MOBILE SCALING *************/
+
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    #card-component {
+        height: 20rem;
+        width: 20rem;
+    }
+}

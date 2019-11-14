@@ -1,5 +1,5 @@
-import React from "react"
-import "./navbar.css"
+import React from "react";
+import "./navbar.css";
 
 var menuSelected = false;
 
@@ -69,7 +69,6 @@ function menuSelect() {
     resumeLink.style.oTransform = "translate(0px, "+resumePosTarget+"rem)";
     resumeLink.style.msTransform = "translate(0px, "+resumePosTarget+"rem)";
     resumeLink.style.transform = "translate(0px, "+resumePosTarget+"rem)";
-    
 
     menuSelected = !menuSelected;
 }
