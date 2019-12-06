@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./navbar.css";
 
 var menuSelected = false;
@@ -118,25 +118,28 @@ function selectExperience() {
     }
 }
 
-const NavBar = () => {
-    return (
-        <div id = "navbar-component">
-            <div id = "navbar-container">
-                <div id = "title-panel" onClick = {navBarClick}>
-                    <h1 id = "name-title" class = "unselectable">ROHAN UPPONI</h1>
+class NavBar extends Component {
+
+    render() {
+        return (
+            <div id = "navbar-component">
+                <div id = "navbar-container">
+                    <div id = "title-panel" onClick = {navBarClick}>
+                        <h1 id = "name-title" class = "unselectable">ROHAN UPPONI</h1>
+                    </div>
+                    <div id = "menu-panel" onClick = {menuSelect}>
+                        <h1 id = "menu-symbol" class = "unselectable">{'\u2630'}</h1>
+                    </div>
                 </div>
-                <div id = "menu-panel" onClick = {menuSelect}>
-                    <h1 id = "menu-symbol" class = "unselectable">{'\u2630'}</h1>
-                </div>
+                <div id = "menu-container"></div>
+                <ul id = "menu-list">
+                    <li id = "about-link" class = "list-link unselectable" onClick = {selectAbout}>ABOUT</li>
+                    <li id = "resume-link" class = "list-link unselectable" onClick = {selectResume}>RESUME</li>
+                    <li id = "experience-link" class = "list-link unselectable" onClick = {selectExperience}>EXPERIENCE</li>
+                </ul>
             </div>
-            <div id = "menu-container"></div>
-            <ul id = "menu-list">
-                <li id = "about-link" class = "list-link unselectable" onClick = {selectAbout}>ABOUT</li>
-                <li id = "resume-link" class = "list-link unselectable" onClick = {selectResume}>RESUME</li>
-                <li id = "experience-link" class = "list-link unselectable" onClick = {selectExperience}>EXPERIENCE</li>
-            </ul>
-        </div>
-    );
+        );
+    }
 }
 
 export default NavBar

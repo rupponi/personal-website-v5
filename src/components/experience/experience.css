@@ -1,5 +1,5 @@
 .section-title {
-    font-family: "Lato", "sans-serif";
+    font-family: "Open Sans", "sans-serif";
     font-size: 2rem;
     font-weight: 100;
 
@@ -29,137 +29,8 @@
     width: 75%;
 }
 
-.title {
-    display: flex;
-    text-align: left;
-
-    height: 5rem;
-    width: 100%;
-}
-
-.logo-container {
-    display: inline-block;
-    white-space: nowrap;
-    text-align: center;
-
-    height: 5rem;
-    width: 5rem;
-}
-
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-@-webkit-keyframes logoPulse {
-    0% {
-        box-shadow: 0 0 5px #00DAFF;
-    }
-    50% {
-        box-shadow: 0 0 15px #00DAFF;
-    }
-    100% {
-        box-shadow: 0 0 5px #00DAFF;
-    }
-}
-@keyframes logoPulse {
-    0% {
-        box-shadow: 0 0 5px #00DAFF;
-    }
-    50% {
-        box-shadow: 0 0 15px #00DAFF;
-    }
-    100% {
-        box-shadow: 0 0 5px #00DAFF;
-    }
-}
-
-.logo {
-    height: 4rem;
-    width: 4rem;
-
-    margin-right: 0.5rem;
-
-    max-height: 5rem;
-    max-width: 5rem;
-    border-radius: 50%;
-
-    vertical-align: middle;
-
-    -webkit-animation: logoPulse 1.5s linear infinite forwards;
-    -moz-animation: logoPulse 1.5s linear infinite forwards;
-    animation: logoPulse 1.5s linear infinite forwards;
-}
-.logo:hover {
-    -webkit-transition: all 0.05s ease-in;
-    -moz-transition: all 0.05s ease-in;
-    -o-transition: all 0.05s ease-in;
-    transition: all 0.05s ease-in;
-
-    -webkit-transform: scale(1.1);
-    -moz-transition: scale(1.1);
-    -o-transition: scale(1.1);
-    transform: scale(1.1);
-}
-.logo:active {
-    height: 3.5rem;
-    width: 3.5rem;
-}
-
-.experience-title {
-    font-size: 1.3em;
-}
-
-.outer-title-container {
-    display: table;
-    height: 5rem;
-    overflow: hidden;
-}
-
-.inner-title-container {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.experience-content-break {
-    position: absolute;
-    background:gray;
-    box-shadow: 0 0 1px gray;
-    
-    height: 0.1rem;
-    width: 90%;
-
-    margin-top: 0.1rem;
-    left: 5%;
-}
-
-.experience-item {
-    background: #131F35;
-    width: 100%;
-
-    padding: 1rem;
-
-    box-shadow: 0 0 3px #00DAFF;
-}
-
-.experience-timeline {
-    color: gray;
-    font-size: 1.1rem;
-
-    text-align: left;
-    margin-left: 5rem;
-    margin-top: 0rem;
-}
-
-.experience-content {
-    color: #FFF;
-    width: 100%;
-    text-align: left;
-}
-
 .experience-description {
-    font-family: "Lato", "sans-serif";
+    font-family: 'Open Sans', 'sans-serif';
     font-size: 1rem;
 
     margin-left: 0.7rem;
@@ -168,11 +39,6 @@
 
 .experience-list-item {
     list-style-type: square;
-}
-
-#signature {
-    position: relative;
-    top: 2rem;
 }
 
 #signature-link {
@@ -203,19 +69,6 @@ and (max-device-width: 480px) {
         font-size: 1.25rem;
     }
 
-    .logo {
-        height: 3rem;
-        width: 3rem;
-    }
-
-    .experience-title {
-        font-size: 1rem;
-    }
-
-    .experience-timeline {
-        font-size: 0.9rem;
-    }
-
     .experience-description {
         font-size: 0.8rem;
     }
@@ -230,19 +83,6 @@ and (max-device-width: 1024px) {
 
     .section-title {
         font-size: 1.25rem;
-    }
-
-    .logo {
-        height: 3rem;
-        width: 3rem;
-    }
-
-    .experience-title {
-        font-size: 1.2rem;
-    }
-
-    .experience-timeline {
-        font-size: 0.9rem;
     }
 
     .experience-description {
