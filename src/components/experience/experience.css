@@ -24,7 +24,6 @@
     top: 9rem;
     left: 10%;
 
-
     height: 80%;
     width: 75%;
 }
@@ -45,7 +44,7 @@
     color: #004A57;
     text-decoration: none;
 
-    font-family: "Noto Sans", "sans-serif";
+    font-family: "Open Sans", "sans-serif";
     font-size: 0.8rem;
     font-weight: lighter;
 }
