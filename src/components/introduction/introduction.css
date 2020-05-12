@@ -1,56 +1,40 @@
-#introduction {
-    position: absolute;
-    color: white;
-
+#introduction-component {
+    background: #0C1424;
     height: 100%;
     width: 100%;
-
-    text-align: center;
-    align-content: center;
-    z-index: 10;
-}
-
-@-webkit-keyframes loadIntroMessage {
-    0% {
-        opacity: 0;
-        top: 45%;
-    }
-    100% {
-        opacity: 1;
-        top: 40%;
-    }
-}
-@keyframes loadIntroMessage {
-    0% {
-        opacity: 0;
-        top: 45%;
-    }
-    100% {
-        opacity: 1;
-        top: 40%;
-    }
 }
 
 #intro-message {
+    color: #fff;
     position: absolute;
-    opacity: 0;
-    font-family: "Open Sans", "san-serif";
+
+    width: 100%;
+
+    font-family: "Open Sans", "sans-serif";
     font-weight: 100;
     font-size: 1.5em;
 
-    top: 45%;
-    margin-left: 10%;
-    margin-right: 10%;
+    top: 40%;
+}
 
-    -webkit-animation: loadIntroMessage 2s ease 1s forwards;
-    animation: loadIntroMessage 2s ease 1s forwards;
+#ref-link-container {
+    position: absolute;
+
+    height: 8rem;
+    width: 100%;
+
+    bottom: 0;
 }
 
 .ref-cont {
     display: inline-block;
     font-size: 2rem;
 
-    top: 85%;
+    height: 5rem;
+    width: 5rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .ref-cont:hover {
     box-shadow: 0 0 3px #00DAFF;
@@ -66,32 +50,8 @@
     transform: scale(0.8);
 }
 
-#mail-button {
-    position: absolute;
-    height: 5rem;
-    width: 5rem;
-
-    margin-left: -10rem;
-}
-
-#github-button {
-    position: absolute;
-    height: 5rem;
-    width: 5rem;
-
-    margin-left: -2rem;
-}
-
-#linkedin-button {
-    position: absolute;
-    height: 5rem;
-    width: 5rem;
-
-    margin-left: 6rem;
-}
-
 .ref {
-    margin-top: 35%;
+    margin-top: 1.5rem;
     color: white;
 }
 .ref:active {

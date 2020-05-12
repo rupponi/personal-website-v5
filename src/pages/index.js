@@ -1,45 +1,63 @@
-import React from "react"
-import NavBar from "../components/navbar/navbar"
+import React from 'react';
+import '../styles/index.css';
 
-import Introduction from "../components/introduction/introduction"
-import About from "../components/about/about"
-import Experience from "../components/experience/experience"
+import Introduction from '../components/introduction/introduction';
+import About from '../components/about/about';
+import Experience from '../components/experience/experience';
+import NavBar from '../components/navbar/navbar';
 
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
-import "../styles/index.css"
+class Index extends React.Component {
+  constructor() {
+    super();
 
-export default ({ data }) => (
-  <html>
-    <link href = "https://fonts.googleapis.com/css?family=Karla" rel = "stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
-    <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
+    this.changeView = this.changeView.bind(this);
 
-    <Helmet>
-      <meta charSet = "utf-8"/>
-      <title>{data.site.siteMetadata.title}</title>
-    </Helmet>
-
-    <div id="navbar">
-      <NavBar/>
-    </div>
-
-    <Introduction/>
-
-    <About/>
-
-    <Experience/>
-
-  </html>
-)
-
-export const query = graphql`
-query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    this.state = {
+      currentView: 'Introduction'
+    };
   }
-`
+
+  changeView(newView) {
+    this.setState({
+      currentView: newView
+    });
+  }
+
+  getCurrentView() {
+    let currentView;
+    switch(this.state.currentView) {
+      case 'Introduction':
+        currentView = <Introduction/>
+        break;
+      case 'About':
+        currentView = <About/>
+        break;
+      case 'Experience':
+        currentView = <Experience/>
+        break;
+      default:
+        break;
+    }
+
+    return currentView;
+  }
+
+  render() {
+    return(
+      <html>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
+
+        <div id = "navbar">
+          <NavBar changeView={this.changeView}/>
+        </div>
+        <div id = "view-container">
+          {this.getCurrentView()}
+        </div>
+      </html>
+    )
+  }
+}
+
+export default Index;

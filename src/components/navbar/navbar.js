@@ -1,26 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./navbar.css";
 
 var menuSelected = false;
-
-function navBarClick() {
-    let title = document.getElementById("name-title"),
-    container = document.getElementById("navbar-container");
-
-    title.classList.add("animate-title-click");
-    container.classList.add("light-navbar");
-
-    window.scrollTo(0, 0);
-
-    title.addEventListener('animationend', () => {
-        title.classList.remove("animate-title-click");
-        container.classList.remove("light-navbar");
-    });
-
-    if (menuSelected) {
-        menuSelect();
-    }
-}
 
 function menuSelect() {
     let menuSymbol = document.getElementById("menu-symbol"),
@@ -73,22 +54,6 @@ function menuSelect() {
     menuSelected = !menuSelected;
 }
 
-function selectAbout() {
-    let aboutSection = document.getElementById("about"),
-    aboutLink = document.getElementById("about-link");
-
-
-    aboutLink.classList.add("animate-menu-item-click");
-    aboutLink.addEventListener('animationend', () => {
-        aboutLink.classList.remove("animate-menu-item-click");
-        aboutSection.scrollIntoView();
-    });
-
-    if (menuSelected) {
-        menuSelect();
-    }
-}
-
 function selectResume() {
     let resumeLink = document.getElementById("resume-link");
 
@@ -98,48 +63,88 @@ function selectResume() {
     });
 
 
-    window.open("res/resume.pdf");
+    window.open("../src/assets/res/resume.pdf");
 
     if (menuSelected) {menuSelect();}
 }
 
-function selectExperience() {
-    let experienceSection = document.getElementById("experience"),
-    experienceLink = document.getElementById("experience-link");
+class NavBar extends React.Component {
 
-    experienceLink.classList.add("animate-menu-item-click");
-    experienceLink.addEventListener('animationend', () => {
-        experienceLink.classList.remove("animate-menu-item-click");
-        experienceSection.scrollIntoView();
-    });
+    constructor(props) {
+        super(props);
 
-    if (menuSelected) {
-        menuSelect();
+        this.navBarClick = this.navBarClick.bind(this);
+        this.selectAbout = this.selectAbout.bind(this);
+        this.selectExperience = this.selectExperience.bind(this);
     }
-}
 
-class NavBar extends Component {
+    navBarClick() {
+        let title = document.getElementById("name-title"),
+        container = document.getElementById("navbar-container");
+    
+        title.classList.add("animate-title-click");
+        container.classList.add("light-navbar");
+    
+        title.addEventListener('animationend', () => {
+            title.classList.remove("animate-title-click");
+            container.classList.remove("light-navbar");
+            this.props.changeView('Introduction');
+        });
+    
+        if (menuSelected) {
+            menuSelect();
+        }
+    }
+
+    selectAbout() {
+        let aboutLink = document.getElementById("about-link");
+    
+    
+        aboutLink.classList.add("animate-menu-item-click");
+        aboutLink.addEventListener('animationend', () => {
+            aboutLink.classList.remove("animate-menu-item-click");
+            this.props.changeView('About');
+        });
+    
+        if (menuSelected) {
+            menuSelect();
+        }
+    }
+
+    selectExperience() {
+        let experienceLink = document.getElementById("experience-link");
+    
+        experienceLink.classList.add("animate-menu-item-click");
+        experienceLink.addEventListener('animationend', () => {
+            experienceLink.classList.remove("animate-menu-item-click");
+            this.props.changeView('Experience');
+        });
+    
+        if (menuSelected) {
+            menuSelect();
+        }
+    }
 
     render() {
         return (
             <div id = "navbar-component">
                 <div id = "navbar-container">
-                    <div id = "title-panel" onClick = {navBarClick}>
-                        <h1 id = "name-title" class = "unselectable">ROHAN UPPONI</h1>
+                    <div id = "title-panel" onClick = {this.navBarClick}>
+                        <h1 id = "name-title" className = "unselectable">ROHAN UPPONI</h1>
                     </div>
                     <div id = "menu-panel" onClick = {menuSelect}>
-                        <h1 id = "menu-symbol" class = "unselectable">{'\u2630'}</h1>
+                        <h1 id = "menu-symbol" className = "unselectable">{'\u2630'}</h1>
                     </div>
                 </div>
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
-                    <li id = "about-link" class = "list-link unselectable" onClick = {selectAbout}>ABOUT</li>
-                    <li id = "resume-link" class = "list-link unselectable" onClick = {selectResume}>RESUME</li>
-                    <li id = "experience-link" class = "list-link unselectable" onClick = {selectExperience}>EXPERIENCE</li>
+                    <li id = "about-link" className = "list-link unselectable" onClick = {this.selectAbout}>ABOUT</li>
+                    <li id = "resume-link" className = "list-link unselectable" onClick = {selectResume}>RESUME</li>
+                    <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience}>EXPERIENCE</li>
                 </ul>
             </div>
         );
     }
 }
 
-export default NavBar
+export default NavBar;

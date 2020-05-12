@@ -1,20 +1,20 @@
+#experience-component {
+    background: #0C1424;
+    position: absolute;
+    color: #fff;
+
+    height: 115vh;
+    width: 100%;
+
+    text-align: center;
+}
+
 .section-title {
     font-family: "Open Sans", "sans-serif";
     font-size: 2rem;
     font-weight: 100;
 
     margin-top: 5.5rem;
-}
-
-#experience {
-    position: absolute;
-    color: #fff;
-
-    top: 200%;
-    height: 100%;
-    width: 100%;
-
-    text-align: center;
 }
 
 #experience-partition {
@@ -24,7 +24,7 @@
     top: 9rem;
     left: 10%;
 
-    height: 80%;
+    height: fit-content;
     width: 75%;
 }
 
@@ -60,8 +60,8 @@
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
-    #experience {
-        height: 200%;
+    #experience-component {
+        height: 225vh;
     }
 
     .section-title {
@@ -77,7 +77,7 @@ and (max-device-width: 480px) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
     #experience {
-        height: 200%;
+        height: 225vh;
     }
 
     .section-title {
