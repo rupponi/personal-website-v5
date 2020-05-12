@@ -57,7 +57,8 @@ class Experience extends React.Component {
                                 a PostgreSQL backend.
                             </li>
                             <li class = "experience-list-item">
-                                Current work focused on new microservice development in 
+                                Current work focused on development of new microservice recently released on
+                                same tech stack.
                             </li>
                         </ul>
                     </ExperienceCard>
