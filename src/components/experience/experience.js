@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./experience.css";
 import ExperienceCard from "../experience-card/experience-card";
 
@@ -35,10 +35,10 @@ asuExperienceData = {
     timeline: '(January 2017 - May 2017)'
 }
 
-class Experience extends Component {
+class Experience extends React.Component {
     render() {
         return (
-            <div id = "experience">
+            <div id = "experience-component">
                 <h1 class = "section-title">Where I've Worked</h1>
                 <div id = "experience-partition">
                     
@@ -121,4 +121,3 @@ class Experience extends Component {
 }
 
 export default Experience;
-

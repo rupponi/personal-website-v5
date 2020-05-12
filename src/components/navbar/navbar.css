@@ -1,6 +1,6 @@
 #navbar-component {
     height: 20rem;
-    position: absolute;
+    position: fixed;
 }
 
 #navbar-container {
