@@ -54,20 +54,6 @@ function menuSelect() {
     menuSelected = !menuSelected;
 }
 
-function selectResume() {
-    let resumeLink = document.getElementById("resume-link");
-
-    resumeLink.classList.add("animate-menu-item-click");
-    resumeLink.addEventListener('animationend', () => {
-        resumeLink.classList.remove("animate-menu-item-click");
-    });
-
-
-    window.open("../src/assets/res/resume.pdf");
-
-    if (menuSelected) {menuSelect();}
-}
-
 class NavBar extends React.Component {
 
     constructor(props) {
@@ -76,6 +62,7 @@ class NavBar extends React.Component {
         this.navBarClick = this.navBarClick.bind(this);
         this.selectAbout = this.selectAbout.bind(this);
         this.selectExperience = this.selectExperience.bind(this);
+        this.selectResume = this.selectResume.bind(this);
     }
 
     navBarClick() {
@@ -125,6 +112,20 @@ class NavBar extends React.Component {
         }
     }
 
+    selectResume() {
+        let resumeLink = document.getElementById("resume-link");
+    
+        resumeLink.classList.add("animate-menu-item-click");
+        resumeLink.addEventListener('animationend', () => {
+            resumeLink.classList.remove("animate-menu-item-click");
+        });
+    
+    
+        window.open("res/resume.pdf");
+    
+        if (menuSelected) {menuSelect();}
+    }
+
     render() {
         return (
             <div id = "navbar-component">
@@ -139,7 +140,7 @@ class NavBar extends React.Component {
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
                     <li id = "about-link" className = "list-link unselectable" onClick = {this.selectAbout}>ABOUT</li>
-                    <li id = "resume-link" className = "list-link unselectable" onClick = {selectResume}>RESUME</li>
+                    <li id = "resume-link" className = "list-link unselectable" onClick = {this.selectResume}>RESUME</li>
                     <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience}>EXPERIENCE</li>
                 </ul>
             </div>
