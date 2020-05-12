@@ -2,7 +2,15 @@ import React from "react";
 import "./experience.css";
 import ExperienceCard from "../experience-card/experience-card";
 
-let stcExperienceData = {
+let c1ExperienceData = {
+    externalLink: 'https://campus.capitalone.com/technology-program',
+    logoPath: 'img/capital-one-logo.png',
+    logoDescriptor: 'Capital One Work Experience',
+    title: 'Software Development Engineer',
+    externalLinkText: 'Capital One',
+    timeline: '(February 2020 - Present)'
+},
+stcExperienceData = {
     externalLink: 'https://stchealth.com',
     logoPath: 'img/stc-logo.png',
     logoDescriptor: 'STC Work Experience',
@@ -41,6 +49,20 @@ class Experience extends React.Component {
             <div id = "experience-component">
                 <h1 id = "experience-title">Where I've Worked</h1>
                 <div id = "experience-partition">
+
+                    <ExperienceCard experienceData = {c1ExperienceData}>
+                        <ul class = "experience-description">
+                            <li class = "experience-list-item">
+                                Full stack role working with Angular platform built on Java Spring Boot and
+                                a PostgreSQL backend.
+                            </li>
+                            <li class = "experience-list-item">
+                                Current work focused on new microservice development in 
+                            </li>
+                        </ul>
+                    </ExperienceCard>
+
+                    <br/>
                     
                     <ExperienceCard experienceData = {stcExperienceData}>
                         <ul class = "experience-description">
