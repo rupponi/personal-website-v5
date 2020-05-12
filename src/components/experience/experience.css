@@ -1,12 +1,7 @@
 #experience-component {
-    background: #0C1424;
-    position: absolute;
-    color: #fff;
-
-    height: 115vh;
+    color: #FFFFFF;
+    height: 100%;
     width: 100%;
-
-    text-align: center;
 }
 
 .section-title {
@@ -15,6 +10,17 @@
     font-weight: 100;
 
     margin-top: 5.5rem;
+}
+
+#experience-title {
+    position: absolute;
+    color: #FFFFFF;
+
+    width: 100%;
+
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 100;
+    font-size: 2em;
 }
 
 #experience-partition {

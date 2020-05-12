@@ -1,6 +1,8 @@
 #navbar-component {
     height: 20rem;
     position: fixed;
+
+    z-index: 10000;
 }
 
 #navbar-container {
@@ -14,7 +16,7 @@
 
     overflow: auto;
 
-    z-index: 1000;
+    z-index: 10000;
 }
 
 #navbar-container:hover {
@@ -69,7 +71,7 @@
 
     height: 4rem;
     width: 15rem;
-    z-index: 10;
+    z-index: 1000;
 
     padding: 0;
     margin-left: calc(100% - 15rem);
@@ -87,7 +89,9 @@
     width: 15rem;
     margin-left: calc(100% - 15rem);
     color: #fff;
-    z-index: 10;
+    z-index: 5000;
+
+    opacity: 1;
 }
 
 .list-link {
@@ -103,7 +107,6 @@
     margin-left: calc(100% - 20rem);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    z-index: 1;
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;

@@ -27,13 +27,13 @@ class Index extends React.Component {
     let currentView;
     switch(this.state.currentView) {
       case 'Introduction':
-        currentView = <Introduction/>
+        currentView = <Introduction/>;
         break;
       case 'About':
-        currentView = <About/>
+        currentView = <About/>;
         break;
       case 'Experience':
-        currentView = <Experience/>
+        currentView = <Experience/>;
         break;
       default:
         break;
