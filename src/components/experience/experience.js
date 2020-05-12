@@ -39,7 +39,7 @@ class Experience extends React.Component {
     render() {
         return (
             <div id = "experience-component">
-                <h1 class = "section-title">Where I've Worked</h1>
+                <h1 id = "experience-title">Where I've Worked</h1>
                 <div id = "experience-partition">
                     
                     <ExperienceCard experienceData = {stcExperienceData}>
