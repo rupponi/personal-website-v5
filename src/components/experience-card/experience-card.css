@@ -21,7 +21,6 @@
     white-space: nowrap;
     text-align: center;
 
-    height: 5rem;
     width: 5rem;
 }
 
@@ -58,8 +57,6 @@
     height: 4rem;
     width: 4rem;
 
-    margin-right: 0.5rem;
-
     max-height: 5rem;
     max-width: 5rem;
     border-radius: 50%;
@@ -86,10 +83,29 @@
     width: 3.5rem;
 }
 
+#outer-title-container {
+    display: table;
+    height: 5rem;
+    line-height: 1.3rem;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+#inner-title-container {
+    display: table-cell;
+    height: 5rem;
+    width: inherit;
+    vertical-align: middle;
+}
+
 #experience-title {
-    font-size: 1.25rem;
+    position: relative;
+    display: table-cell;
+    font-size: 1.3rem;
     font-weight: lighter;
+    height: 3rem;
     width: 80%;
+    vertical-align: middle;
 }
 
 #external-links {
@@ -101,17 +117,6 @@
 }
 #external-links:hover {
     color: #004A57;
-}
-
-#outer-title-container {
-    display: table;
-    height: 5rem;
-    overflow: hidden;
-}
-
-#inner-title-container {
-    display: table-cell;
-    vertical-align: middle;
 }
 
 #experience-content-break {
