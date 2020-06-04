@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'gatsby';
+
 import '../styles/index.css';
 
 import Introduction from '../components/introduction/introduction';
@@ -45,6 +47,7 @@ class Index extends React.Component {
   render() {
     return(
       <html lang = "en">
+        <title>Rohan Upponi | Software Engineer</title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
         <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
