@@ -1,9 +1,23 @@
 import React from 'react';
-import '../about/about.css';
+import '../styles/about.css';
+
+import NavBar from '../components/navbar/navbar';
 
 class About extends React.Component {
-    render() {
-        return(
+
+  render() {
+    return(
+      <html lang = "en">
+        <title>Rohan Upponi | Software Engineer</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
+
+        <div id = "navbar">
+          <NavBar/>
+        </div>
+        <div id = "view-container">
             <div id = "about-component">
                 <h1 id = "about-title">
                     A Little Bit More About Me
@@ -44,8 +58,10 @@ class About extends React.Component {
 
                 </h1>
             </div>
-        );
-    }
+          </div>
+      </html>
+    )
+  }
 }
 
 export default About;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, navigate } from "gatsby";
 import "./navbar.css";
 
 var menuSelected = false;
@@ -75,12 +76,12 @@ class NavBar extends React.Component {
         title.addEventListener('animationend', () => {
             title.classList.remove("animate-title-click");
             container.classList.remove("light-navbar");
-            this.props.changeView('Introduction');
         });
     
         if (menuSelected) {
             menuSelect();
         }
+        navigate('/');
     }
 
     selectAbout() {
@@ -90,12 +91,12 @@ class NavBar extends React.Component {
         aboutLink.classList.add("animate-menu-item-click");
         aboutLink.addEventListener('animationend', () => {
             aboutLink.classList.remove("animate-menu-item-click");
-            this.props.changeView('About');
         });
     
         if (menuSelected) {
             menuSelect();
         }
+        navigate('/about');
     }
 
     selectExperience() {
@@ -104,12 +105,12 @@ class NavBar extends React.Component {
         experienceLink.classList.add("animate-menu-item-click");
         experienceLink.addEventListener('animationend', () => {
             experienceLink.classList.remove("animate-menu-item-click");
-            this.props.changeView('Experience');
         });
     
         if (menuSelected) {
             menuSelect();
         }
+        navigate('/experience');
     }
 
     selectResume() {
@@ -120,17 +121,18 @@ class NavBar extends React.Component {
             resumeLink.classList.remove("animate-menu-item-click");
         });
     
-    
+        if (menuSelected) {
+            menuSelect();
+        }
         window.open("res/resume.pdf");
-    
-        if (menuSelected) {menuSelect();}
     }
 
     render() {
         return (
             <div id = "navbar-component">
                 <div id = "navbar-container">
-                    <div id = "title-panel" onClick = {this.navBarClick}>
+                    <div id = "title-panel" onClick = {this.navBarClick} onKeyDown = {this.navBarClick}>
+                        <Link to="/"></Link>
                         <h1 id = "name-title" className = "unselectable">ROHAN UPPONI</h1>
                     </div>
                     <div id = "menu-panel" onClick = {menuSelect}>
@@ -139,7 +141,7 @@ class NavBar extends React.Component {
                 </div>
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
-                    <li id = "about-link" className = "list-link unselectable" onClick = {this.selectAbout}>ABOUT</li>
+                    <li id = "about-link" className = "list-link unselectable"onClick = {this.selectAbout}><Link to="/about"></Link>ABOUT</li>
                     <li id = "resume-link" className = "list-link unselectable" onClick = {this.selectResume}>RESUME</li>
                     <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience}>EXPERIENCE</li>
                 </ul>
