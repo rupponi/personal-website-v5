@@ -1,8 +1,9 @@
-import React from "react";
-import "../styles/experience.css";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import '../styles/experience.css';
 
-import NavBar from "../components/navbar/navbar";
-import ExperienceCard from "../components/experience-card/experience-card";
+import NavBar from '../components/navbar/navbar';
+import ExperienceCard from '../components/experience-card/experience-card';
 
 let c1ExperienceData = {
     externalLink: 'https://campus.capitalone.com/technology-program',
@@ -50,11 +51,13 @@ class Experience extends React.Component {
     render() {
       return(
         <html lang = "en">
-          <title>Rohan Upponi | Software Engineer</title>
+        <Helmet>
+          <title>Experience | Rohan Upponi</title>
           <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
           <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
           <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
+        </Helmet>
   
           <div id = "navbar">
             <NavBar/>
