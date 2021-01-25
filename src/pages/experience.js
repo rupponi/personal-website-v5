@@ -38,7 +38,7 @@ ascExperienceData = {
 },
 asuExperienceData = {
     externalLink: 'https://cidse.engineering.asu.edu/teaching-research-assistantships-fellowships-awards/',
-    logoPath: 'img/asu-logo.png',
+    logoPath: '/img/asu-logo.png',
     logoDescriptor: 'Arizona State University Work Experience',
     title: 'Undergraduate Teaching Assistant',
     externalLinkText: 'Arizona State University',
