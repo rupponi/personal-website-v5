@@ -1,26 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Rohan Upponi | Software Engineer`,
-    description: `I'm an aspiring software engineer and computer science graduate who loves to work on new and upcoming technologies`,
-    author: `Rohan Upponi`,
-    menuLinks: [
-      {
-        name: 'introduction',
-        link: '/intro'
-      },
-      {
-        name: 'about',
-        link: '/about'
-      },
-      {
-        name: 'experience',
-        link: '/experience'
-      },
-      {
-        name: 'work',
-        link: '/work'
-      }
-    ]
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

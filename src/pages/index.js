@@ -1,48 +1,9 @@
 import React from 'react';
-import { Helmet } from 'gatsby';
-
 import '../styles/index.css';
 
-import Introduction from '../components/introduction/introduction';
-import About from '../components/about/about';
-import Experience from '../components/experience/experience';
 import NavBar from '../components/navbar/navbar';
 
 class Index extends React.Component {
-  constructor() {
-    super();
-
-    this.changeView = this.changeView.bind(this);
-
-    this.state = {
-      currentView: 'Introduction'
-    };
-  }
-
-  changeView(newView) {
-    this.setState({
-      currentView: newView
-    });
-  }
-
-  getCurrentView() {
-    let currentView;
-    switch(this.state.currentView) {
-      case 'Introduction':
-        currentView = <Introduction/>;
-        break;
-      case 'About':
-        currentView = <About/>;
-        break;
-      case 'Experience':
-        currentView = <Experience/>;
-        break;
-      default:
-        break;
-    }
-
-    return currentView;
-  }
 
   render() {
     return(
@@ -54,11 +15,23 @@ class Index extends React.Component {
         <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
 
         <div id = "navbar">
-          <NavBar changeView={this.changeView}/>
+          <NavBar/>
         </div>
         <div id = "view-container">
-          {this.getCurrentView()}
-        </div>
+            <div id = "introduction-component">
+              <h1 id = "intro-message">
+                  My name is Rohan Upponi and I'm a new graduate fullstack software engineer <br/>
+                  I love to work because I work on what I love
+              </h1>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+              <div id = "ref-link-container">
+                  <a rel = "noopener noreferrer" target = "_blank" href = "mailto:mail@rohanupponi.com"><div class="ref-cont"><i class="ref fa fa-envelope-o"/></div></a>
+                  <a rel = "noopener noreferrer" target = "_blank" href = "https://github.com/rupponi"><div class="ref-cont"><i class="ref fa fa-github"/></div></a>
+                  <a rel = "noopener noreferrer" target = "_blank" href = "https://linkedin.com/in/rohanupponi"><div class="ref-cont"><i class = "ref fa fa-linkedin"/></div></a>
+              </div>
+            </div>
+          </div>
       </html>
     )
   }
