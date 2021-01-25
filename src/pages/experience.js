@@ -6,7 +6,7 @@ import ExperienceCard from "../components/experience-card/experience-card";
 
 let c1ExperienceData = {
     externalLink: 'https://campus.capitalone.com/technology-program',
-    logoPath: 'img/capital-one-logo.png',
+    logoPath: '/img/capital-one-logo.png',
     logoDescriptor: 'Capital One Work Experience',
     title: 'Software Development Engineer',
     externalLinkText: 'Capital One',
@@ -14,7 +14,7 @@ let c1ExperienceData = {
 },
 stcExperienceData = {
     externalLink: 'https://stchealth.com',
-    logoPath: 'img/stc-logo.png',
+    logoPath: '/img/stc-logo.png',
     logoDescriptor: 'STC Work Experience',
     title: 'Software Development Intern',
     externalLinkText: 'Scientific Technologies Corporation',
@@ -22,7 +22,7 @@ stcExperienceData = {
 },
 intelExperienceData = {
     externalLink: 'https://www.intel.com/content/www/us/en/architecture-and-technology/optane-memory.html',
-    logoPath: 'img/intel-logo.png',
+    logoPath: '/img/intel-logo.png',
     logoDescriptor: 'Intel Work Experience',
     title: 'Software Engineering Intern',
     externalLinkText: 'Intel Corporation',
@@ -30,7 +30,7 @@ intelExperienceData = {
 },
 ascExperienceData = {
     externalLink: 'https://www.azcourts.gov/AZSupremeCourt',
-    logoPath: 'img/az-supreme-court-logo.png',
+    logoPath: '/img/az-supreme-court-logo.png',
     logoDescriptor: 'Arizona Supreme Court Work Experience',
     title: 'Software Development Extern',
     externalLinkText: 'Arizona Supreme Court',
