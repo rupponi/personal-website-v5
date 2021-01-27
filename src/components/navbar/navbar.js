@@ -141,7 +141,7 @@ class NavBar extends React.Component {
                 </div>
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
-                    <li id = "about-link" className = "list-link unselectable"onClick = {this.selectAbout}><Link to="/about"></Link>ABOUT</li>
+                    <li id = "about-link" className = "list-link unselectable"onClick = {this.selectAbout}>ABOUT</li>
                     <li id = "resume-link" className = "list-link unselectable" onClick = {this.selectResume}>RESUME</li>
                     <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience}>EXPERIENCE</li>
                 </ul>
