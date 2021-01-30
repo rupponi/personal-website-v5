@@ -23,6 +23,10 @@
     box-shadow: 0 10px 10px -10px black;
 }
 
+:focus {
+    outline: 0;
+}
+
 #name-title {
     color: #fff;
     font-family: "Karla", "sans-serif";
@@ -94,6 +98,11 @@
     opacity: 1;
 }
 
+.list-container {
+    list-style-type: none;
+    position: absolute;
+}
+
 .list-link {
     list-style-type: none;
     position: absolute;
@@ -116,6 +125,10 @@
 }
 .list-link:hover {
     box-shadow: 0 0 3px #00DAFF;
+}
+
+.list-link-span {
+    display: block;
 }
 
 

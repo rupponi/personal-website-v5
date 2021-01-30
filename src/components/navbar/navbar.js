@@ -136,18 +136,24 @@ class NavBar extends React.Component {
         return (
             <div id = "navbar-component">
                 <div id = "navbar-container">
-                    <div id = "title-panel" onClick = {this.navBarClick} onKeyPress = {this.navBarClick}>
+                    <div id = "title-panel" onClick = {this.navBarClick} onKeyPress = {this.navBarClick} tabIndex="0" role="button">
                         <h1 id = "name-title" className = "unselectable">ROHAN UPPONI</h1>
                     </div>
-                    <div id = "menu-panel" onClick = {menuSelect} onKeyPress = {menuSelect}>
+                    <div id = "menu-panel" onClick = {menuSelect} onKeyPress = {menuSelect} tabIndex="0" role="button">
                         <h1 id = "menu-symbol" className = "unselectable">{'\u2630'}</h1>
                     </div>
                 </div>
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
-                    <li id = "about-link" className = "list-link unselectable"onClick = {this.selectAbout} onKeyPress = {this.selectAbout}>ABOUT</li>
-                    <li id = "resume-link" className = "list-link unselectable" onClick = {this.selectResume} onKeyPress = {this.selectResume}>RESUME</li>
-                    <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience} onKeyPress = {this.selectExperience}>EXPERIENCE</li>
+                    <li id = "about-link" className = "list-link unselectable">
+                        <span class = "list-link-span" onClick = {this.selectAbout} onKeyPress = {this.selectAbout} tabIndex="0" role="button">ABOUT</span>
+                    </li>
+                    <li id = "resume-link" className = "list-link unselectable">
+                        <span class = "list-link-span" onClick = {this.selectResume} onKeyPress = {this.selectResume} tabIndex="0" role="button">RESUME</span>
+                    </li>
+                    <li id = "experience-link" className = "list-link unselectable">
+                        <span class = "list-link-span" onClick = {this.selectExperience} onKeyPress = {this.selectExperience} tabIndex="0" role="button">EXPERIENCE</span>
+                    </li>
                 </ul>
             </div>
         );
