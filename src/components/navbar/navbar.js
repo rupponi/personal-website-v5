@@ -81,7 +81,7 @@ class NavBar extends React.Component {
         if (menuSelected) {
             menuSelect();
         }
-        navigate('/');
+        setTimeout(() => { navigate('/'); }, 250);
     }
 
     selectAbout() {
@@ -96,7 +96,7 @@ class NavBar extends React.Component {
         if (menuSelected) {
             menuSelect();
         }
-        navigate('/about');
+        setTimeout(() => { navigate('/about'); }, 250);
     }
 
     selectExperience() {
@@ -110,7 +110,7 @@ class NavBar extends React.Component {
         if (menuSelected) {
             menuSelect();
         }
-        navigate('/experience');
+        setTimeout(() => { navigate('/experience'); }, 250);
     }
 
     selectResume() {
@@ -132,7 +132,6 @@ class NavBar extends React.Component {
             <div id = "navbar-component">
                 <div id = "navbar-container">
                     <div id = "title-panel" onClick = {this.navBarClick} onKeyDown = {this.navBarClick}>
-                        <Link to="/"></Link>
                         <h1 id = "name-title" className = "unselectable">ROHAN UPPONI</h1>
                     </div>
                     <div id = "menu-panel" onClick = {menuSelect}>
