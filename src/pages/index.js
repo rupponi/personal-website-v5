@@ -11,7 +11,6 @@ class Index extends React.Component {
       <html lang = "en">
         <Helmet>
           <title>Rohan Upponi</title>
-          <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
           <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
           <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
@@ -29,9 +28,9 @@ class Index extends React.Component {
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
               <div id = "ref-link-container">
-                  <a rel = "noopener noreferrer" target = "_blank" href = "mailto:mail@rohanupponi.com"><div class="ref-cont"><i class="ref fa fa-envelope-o"/></div></a>
-                  <a rel = "noopener noreferrer" target = "_blank" href = "https://github.com/rupponi"><div class="ref-cont"><i class="ref fa fa-github"/></div></a>
-                  <a rel = "noopener noreferrer" target = "_blank" href = "https://linkedin.com/in/rohanupponi"><div class="ref-cont"><i class = "ref fa fa-linkedin"/></div></a>
+                  <a rel = "noopener noreferrer" target = "_blank" href = "mailto:mail@rohanupponi.com" aria-label="Email Link"><div class="ref-cont"><i class="ref fa fa-envelope-o"/></div></a>
+                  <a rel = "noopener noreferrer" target = "_blank" href = "https://github.com/rupponi" aria-label="Github Link"><div class="ref-cont"><i class="ref fa fa-github"/></div></a>
+                  <a rel = "noopener noreferrer" target = "_blank" href = "https://linkedin.com/in/rohanupponi" aria-label="LinkedIn Link"><div class="ref-cont"><i class = "ref fa fa-linkedin"/></div></a>
               </div>
             </div>
           </div>
