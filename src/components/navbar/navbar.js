@@ -1,8 +1,14 @@
 import React from "react";
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import "./navbar.css";
 
 var menuSelected = false;
+
+const MENU_LENGTH_MAX = 8;
+const MENU_ITEM_ABOUT_POS_MAX = 5;
+const MENU_ITEM_EXPERIENCE_POS_MAX = 9;
+const MENU_ITEM_RESUME_POS_MAX = 13;
+const MENU_SYMBOL_ROTATE_ANGLE_MAX = 180;
 
 function menuSelect() {
     let menuSymbol = document.getElementById("menu-symbol"),
@@ -17,11 +23,11 @@ function menuSelect() {
         menuSymbol.classList.remove("animate-symbol-click");
     });
 
-    let menuLengthTarget = menuSelected ? 0 : 8,
-    aboutPosTarget = menuSelected ? 0 : 5,
-    experiencePosTarget = menuSelected ? 0 : 9,
-    resumePosTarget = menuSelected ? 0 : 13,
-    symbolAngleTarget = menuSelected ? 0 : 180;
+    let menuLengthTarget = menuSelected ? 0 : MENU_LENGTH_MAX,
+    aboutPosTarget = menuSelected ? 0 : MENU_ITEM_ABOUT_POS_MAX,
+    experiencePosTarget = menuSelected ? 0 : MENU_ITEM_EXPERIENCE_POS_MAX,
+    resumePosTarget = menuSelected ? 0 : MENU_ITEM_RESUME_POS_MAX,
+    symbolAngleTarget = menuSelected ? 0 : MENU_SYMBOL_ROTATE_ANGLE_MAX;
 
     menuSymbol.style.webkitTransform = "rotate("+symbolAngleTarget+"deg)";
     menuSymbol.style.mozTransform = "rotate("+symbolAngleTarget+"deg)";
@@ -87,7 +93,6 @@ class NavBar extends React.Component {
     selectAbout() {
         let aboutLink = document.getElementById("about-link");
     
-    
         aboutLink.classList.add("animate-menu-item-click");
         aboutLink.addEventListener('animationend', () => {
             aboutLink.classList.remove("animate-menu-item-click");
@@ -131,18 +136,18 @@ class NavBar extends React.Component {
         return (
             <div id = "navbar-component">
                 <div id = "navbar-container">
-                    <div id = "title-panel" onClick = {this.navBarClick} onKeyDown = {this.navBarClick}>
+                    <div id = "title-panel" onClick = {this.navBarClick} onKeyPress = {this.navBarClick}>
                         <h1 id = "name-title" className = "unselectable">ROHAN UPPONI</h1>
                     </div>
-                    <div id = "menu-panel" onClick = {menuSelect}>
+                    <div id = "menu-panel" onClick = {menuSelect} onKeyPress = {menuSelect}>
                         <h1 id = "menu-symbol" className = "unselectable">{'\u2630'}</h1>
                     </div>
                 </div>
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
-                    <li id = "about-link" className = "list-link unselectable"onClick = {this.selectAbout}>ABOUT</li>
-                    <li id = "resume-link" className = "list-link unselectable" onClick = {this.selectResume}>RESUME</li>
-                    <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience}>EXPERIENCE</li>
+                    <li id = "about-link" className = "list-link unselectable"onClick = {this.selectAbout} onKeyPress = {this.selectAbout}>ABOUT</li>
+                    <li id = "resume-link" className = "list-link unselectable" onClick = {this.selectResume} onKeyPress = {this.selectResume}>RESUME</li>
+                    <li id = "experience-link" className = "list-link unselectable" onClick = {this.selectExperience} onKeyPress = {this.selectExperience}>EXPERIENCE</li>
                 </ul>
             </div>
         );
