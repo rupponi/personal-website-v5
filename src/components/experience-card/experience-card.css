@@ -121,7 +121,7 @@
 
 #experience-content-break {
     position: absolute;
-    background: linear-gradient(white, #131F35);
+    background: linear-gradient(#00DAFF, #131F35);
     
     height: 0.1rem;
     width: 90%;
