@@ -11,8 +11,9 @@ class Index extends React.Component {
       <html lang = "en">
         <Helmet>
           <title>Rohan Upponi</title>
-          <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
-          <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
+          <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap'/>
+          <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla'/>
+          <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
           <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
         </Helmet>
 
@@ -25,7 +26,6 @@ class Index extends React.Component {
                   My name is Rohan Upponi and I'm a new graduate fullstack software engineer <br/>
                   I love to work because I work on what I love
               </h1>
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
               <div id = "ref-link-container">
                   <a rel = "noopener noreferrer" target = "_blank" href = "mailto:mail@rohanupponi.com" aria-label="Email Link"><div class="ref-cont"><i class="ref fa fa-envelope-o"/></div></a>

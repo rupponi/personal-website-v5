@@ -26,11 +26,13 @@ html,body {
     margin-top: 5.5rem;
 }
 
-#experience-title {
+#experience-section-title {
     position: absolute;
     color: #FFFFFF;
 
     width: 100%;
+
+    top: 4rem;
 
     font-family: "Open Sans", "sans-serif";
     font-weight: 100;
