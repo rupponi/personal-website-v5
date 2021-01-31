@@ -11,7 +11,6 @@ class About extends React.Component {
         <Helmet>
           <title>About Me | Rohan Upponi</title>
           <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap" rel="stylesheet"/>
-          <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
           <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
         </Helmet>
 
