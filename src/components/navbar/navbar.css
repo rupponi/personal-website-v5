@@ -114,8 +114,6 @@
 
     width: 15rem;
     margin-left: calc(100% - 20rem);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -129,6 +127,9 @@
 
 .list-link-span {
     display: block;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 
