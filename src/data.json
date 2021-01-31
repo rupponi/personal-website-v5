@@ -1,88 +1,91 @@
 {
-    "title" : "Personal data for website",
-    "content" : [
-        {
-            "title" : "Software Development Engineer",
-            "externalLink" : "https://campus.capitalone.com/technology-program",
-            "logoPath" : "/img/capital-one-logo.png",
-            "logoDescriptor" : "Capital One Work Experience",
-            "externalLinkText" : "Capital One",
-            "timeline" : "(February 2020 - Present)",
-            "description" : [
-                {
-                    "body" : "Full stack role working with Angular platform built on Java Spring Boot and a PostgreSQL backend."
-                },
-                {
-                    "body" : "Current work focused on development of new microservice recently released on same tech stack."
-                }
-            ]
-        },
-        {
-            "title" : "Software Development Intern",
-            "externalLink" : "https://stchealth.com/about",
-            "logoPath" : "/img/stc-logo.png",
-            "logoDescriptor" : "STC Work Experience",
-            "externalLinkText" : "Scientific Technologies Corporation",
-            "timeline" : "(August 2018 - May 2019)",
-            "description" : [
-                {
-                    "body" : "Developed API routing backend authentication and account data retrieval services for front-end web app."
-                },
-                {
-                    "body" : "Set up CDN delivery of front-end web application hosted on AWS using CloudFront."
-                },
-                {
-                    "body" : "Automated AWS infrastructure for immediate deployment and simple scaling of the backend services using CloudFormation, capable of addressing millions of STC's current or potential users."
-                }
-            ]
-        },
-        {
-            "title" : "Software Engineering Intern",
-            "externalLink" : "https://www.intel.com/content/www/us/en/architecture-and-technology/optane-memory.html",
-            "logoPath" : "/img/intel-logo.png",
-            "logoDescriptor" : "Intel Work Experience",
-            "externalLinkText" : "Intel Corporation",
-            "timeline" : "(May 2018 - February 2019)",
-            "description" : [
-                {
-                    "body" : "Developed an extensive unit-level testing framework that eliminated firmware scaling issues and improved widespread error detection across firmware for Intel Optane memory modules through development of extensive unit-level testing using Unity testing framework."
-                },
-                {
-                    "body" : "Wrote hardware optimizations through close communication with hardware team on detailed hardware specifications."
-                }
-            ]
-        },
-        {
-            "title" : "Software Development Extern",
-            "externalLink" : "https://www.azcourts.gov/AZSupremeCourt",
-            "logoPath" : "/img/az-supreme-court-logo.png",
-            "logoDescriptor" : "Arizona Supreme Court Work Experience",
-            "externalLinkText" : "Arizona Supreme Court",
-            "timeline" : "(June 2017 - August 2017)",
-            "description" : [
-                {
-                    "body" : "Created a GUI viewing tool for querying a SQL database of court cases, streamlining front-end interaction with digital database and formatting cases to different templates based on case type."
-                },
-                {
-                    "body" : "Created and implemented test scripts to debug the Supreme Court Case Management System, providing patches and confirming system integrity for the v 47.0 system update."
-                }
-            ]
-        },
-        {
-            "title" : "Undergraduate Teaching Assistant",
-            "externalLink" : "https://cidse.engineering.asu.edu/teaching-research-assistantships-fellowships-awards/",
-            "logoPath" : "/img/asu-logo.png",
-            "logoDescriptor" : "Arizona State University Work Experience",
-            "externalLinkText" : "Arizona State University",
-            "timeline" : "(January 2017 - May 2017)",
-            "description" : [
-                {
-                    "body" : "Improved student grades by an average of one letter grade relative to standard average through hosting crash-course review sessions for students outside lecture to aid in developing more intuitive understanding of object-oriented programming with Java."
-                },
-                {
-                    "body" : "Engaged student day-to-day comprehension through administering and guiding students on planned weekly in-class coding exercises."
-                }
-            ]
-        }
-    ]
+    "title" : "Rohan Upponi",
+    "experience": {
+        "title" : "Where I've Worked",
+        "content" : [
+            {
+                "title" : "Software Development Engineer",
+                "externalLink" : "https://campus.capitalone.com/technology-program",
+                "logoPath" : "/img/capital-one-logo.png",
+                "logoDescriptor" : "Capital One Work Experience",
+                "externalLinkText" : "Capital One",
+                "timeline" : "(February 2020 - Present)",
+                "description" : [
+                    {
+                        "body" : "Full stack role working with Angular platform built on Java Spring Boot and a PostgreSQL backend."
+                    },
+                    {
+                        "body" : "Current work focused on development of new microservice recently released on same tech stack."
+                    }
+                ]
+            },
+            {
+                "title" : "Software Development Intern",
+                "externalLink" : "https://stchealth.com/about",
+                "logoPath" : "/img/stc-logo.png",
+                "logoDescriptor" : "STC Work Experience",
+                "externalLinkText" : "Scientific Technologies Corporation",
+                "timeline" : "(August 2018 - May 2019)",
+                "description" : [
+                    {
+                        "body" : "Developed API routing backend authentication and account data retrieval services for front-end web app."
+                    },
+                    {
+                        "body" : "Set up CDN delivery of front-end web application hosted on AWS using CloudFront."
+                    },
+                    {
+                        "body" : "Automated AWS infrastructure for immediate deployment and simple scaling of the backend services using CloudFormation, capable of addressing millions of STC's current or potential users."
+                    }
+                ]
+            },
+            {
+                "title" : "Software Engineering Intern",
+                "externalLink" : "https://www.intel.com/content/www/us/en/architecture-and-technology/optane-memory.html",
+                "logoPath" : "/img/intel-logo.png",
+                "logoDescriptor" : "Intel Work Experience",
+                "externalLinkText" : "Intel Corporation",
+                "timeline" : "(May 2018 - February 2019)",
+                "description" : [
+                    {
+                        "body" : "Developed an extensive unit-level testing framework that eliminated firmware scaling issues and improved widespread error detection across firmware for Intel Optane memory modules through development of extensive unit-level testing using Unity testing framework."
+                    },
+                    {
+                        "body" : "Wrote hardware optimizations through close communication with hardware team on detailed hardware specifications."
+                    }
+                ]
+            },
+            {
+                "title" : "Software Development Extern",
+                "externalLink" : "https://www.azcourts.gov/AZSupremeCourt",
+                "logoPath" : "/img/az-supreme-court-logo.png",
+                "logoDescriptor" : "Arizona Supreme Court Work Experience",
+                "externalLinkText" : "Arizona Supreme Court",
+                "timeline" : "(June 2017 - August 2017)",
+                "description" : [
+                    {
+                        "body" : "Created a GUI viewing tool for querying a SQL database of court cases, streamlining front-end interaction with digital database and formatting cases to different templates based on case type."
+                    },
+                    {
+                        "body" : "Created and implemented test scripts to debug the Supreme Court Case Management System, providing patches and confirming system integrity for the v 47.0 system update."
+                    }
+                ]
+            },
+            {
+                "title" : "Undergraduate Teaching Assistant",
+                "externalLink" : "https://cidse.engineering.asu.edu/teaching-research-assistantships-fellowships-awards/",
+                "logoPath" : "/img/asu-logo.png",
+                "logoDescriptor" : "Arizona State University Work Experience",
+                "externalLinkText" : "Arizona State University",
+                "timeline" : "(January 2017 - May 2017)",
+                "description" : [
+                    {
+                        "body" : "Improved student grades by an average of one letter grade relative to standard average through hosting crash-course review sessions for students outside lecture to aid in developing more intuitive understanding of object-oriented programming with Java."
+                    },
+                    {
+                        "body" : "Engaged student day-to-day comprehension through administering and guiding students on planned weekly in-class coding exercises."
+                    }
+                ]
+            }
+        ]
+    }
 }
