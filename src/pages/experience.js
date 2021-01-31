@@ -28,7 +28,6 @@ class Experience extends React.Component {
           <Helmet>
             <title>Experience | Rohan Upponi</title>
             <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap'/>
-            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla'/>
             <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
           </Helmet>
 

@@ -29,11 +29,11 @@
 
 #name-title {
     color: #fff;
-    font-family: "Karla", "sans-serif";
+    font-family: "Open Sans", "sans-serif";
 
     font-size: 1.5rem;
     font-weight: 100;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     margin-left: 6rem;
 }
 
@@ -109,7 +109,7 @@
 
     color: #fff;
     font-size: 1.2rem;
-    font-family: "Karla", "sans-serif";
+    font-family: "Open Sans", "sans-serif";
     text-align: center;
 
     width: 15rem;
