@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
+import '../styles/font-awesome-icons.css';
 
 import NavBar from '../components/navbar/navbar';
 
@@ -13,7 +14,6 @@ class Index extends React.Component {
           <title>Rohan Upponi</title>
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap'/>
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla'/>
-          <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
           <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
         </Helmet>
 
