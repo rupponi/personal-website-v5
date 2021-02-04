@@ -1,7 +1,5 @@
 #navbar-component {
-    height: 20rem;
     position: fixed;
-
     z-index: 10000;
 }
 

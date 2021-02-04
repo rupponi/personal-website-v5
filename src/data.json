@@ -1,5 +1,19 @@
 {
     "title" : "Rohan Upponi",
+    "about": {
+        "title" : "A Little Bit More About Me",
+        "content" : [
+            {
+                "description" : "In case that persistent title bar above didn't give it away, I'm Rohan Upponi. I enjoy bolstering my understanding of new technologies through real-world application, as a heavy proponent of learning by doing."
+            },
+            {
+                "description" : "I enjoy building things that both challenge my creativity and offer challenges to overcome in pursuit of making something truly worthwhile whether to me or anyone that comes across it."
+            },
+            {
+                "description" : "When I'm not staring at a computer screen, I enjoy keeping myself going with morning runs and challenging my inner foodie with something new to try!"
+            }
+        ]
+    },
     "experience": {
         "title" : "Where I've Worked",
         "content" : [
@@ -12,10 +26,10 @@
                 "timeline" : "(February 2020 - Present)",
                 "description" : [
                     {
-                        "body" : "Full stack role working with Angular platform built on Java Spring Boot and a PostgreSQL backend."
+                        "body" : "Built a Spring Boot microservice supporting Capital One planning and reporting, pushing forward the team’s primary effort to internalize all Salesforce business dependencies within our credit review platform."
                     },
                     {
-                        "body" : "Current work focused on development of new microservice recently released on same tech stack."
+                        "body" : "Mass-migrated the platform’s secrets and passwords off of enterprise GitHub to internal data lockboxes, closing off a primary vulnerability for internal data breaches."
                     }
                 ]
             },
