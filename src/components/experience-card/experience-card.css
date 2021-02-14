@@ -120,11 +120,12 @@
 }
 
 #experience-content-break {
-    position: absolute;
+    display: block;
     background: linear-gradient(#00DAFF, #131F35);
     
     height: 0.1rem;
     width: 90%;
+    margin-left: 5%;
 
     margin-top: 0.1rem;
     left: 5%;
@@ -164,6 +165,15 @@
 }
 #signature-link:hover {
     color: #004A57;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './experience-card.css';
 
-class ExperienceCard extends Component {
+class ExperienceCard extends React.Component {
     render() {
         return(
-            <div id = "experience-item">
+            <div id = "experience-item" className="unselectable">
                 <div id = "title">
                     <div id = "logo-container">
                         <span id = "helper"/>

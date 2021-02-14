@@ -1,0 +1,25 @@
+#work-item {
+  background: #131F35;
+  height: 20rem;
+  width: 20rem;
+
+  font-family: 'Open Sans', 'sans-serif';
+  padding: 1rem;
+
+  box-shadow: 0 0 3px #00DAFF;
+
+  transition: top ease 0.5s;
+
+}
+#work-item:hover {
+  box-shadow: 0 0 5px #00DAFF;
+}
+#work-item:active {
+  -webkit-transform: (0.98);
+  -moz-transform: scale(0.98);
+  transform: scale(0.98);
+
+  -webkit-animation-timing-function: cubic-bezier();
+  -moz-animation-timing-function: cubic-bezier();
+  animation-timing-function: cubic-bezier();
+}

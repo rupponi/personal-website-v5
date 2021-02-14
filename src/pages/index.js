@@ -22,7 +22,7 @@ class Index extends React.Component {
         <div id = "view-container">
             <div id = "introduction-component">
               <h1 id = "intro-message">
-                  My name is Rohan Upponi and I'm a new graduate fullstack software engineer <br/>
+                  My name is Rohan Upponi<br/>
                   I love to work because I work on what I love
               </h1>
 
