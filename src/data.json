@@ -101,5 +101,26 @@
                 ]
             }
         ]
+    },
+    "work" : {
+        "title" : "My Work",
+        "content" : [
+            {
+                "title" : "Scriber",
+                "description" : "An Android app focusing on giving the individual to build out their own medical portfolio."
+            },
+            {
+                "title" : "Ticketify",
+                "description" : "Spotify application."
+            },
+            {
+                "title" : "test1",
+                "description" : "testing"
+            },
+            {
+                "title" : "test2",
+                "description" : "testing again"
+            }
+        ]
     }
 }

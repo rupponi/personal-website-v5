@@ -4,9 +4,9 @@ import './work-card.css';
 class WorkCard extends React.Component {
   render() {
     return(
-      <div id = "work-item">
-        <h2>Hello</h2>
-        <h3>Hello again</h3>
+      <div id = "work-item" className = "unselectable">
+        <h1>{this.props.workData.title}</h1>
+        <h3>{this.props.workData.description}</h3>
       </div>
     );
   }
