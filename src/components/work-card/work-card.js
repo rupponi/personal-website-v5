@@ -6,7 +6,7 @@ class WorkCard extends React.Component {
     return(
       <div id = "work-item" className = "unselectable">
         <h1>{this.props.workData.title}</h1>
-        <h3>{this.props.workData.description}</h3>
+        <h3 style={{textAlign: "center"}}>{this.props.workData.description}</h3>
       </div>
     );
   }

@@ -1,13 +1,14 @@
 #work-item {
   background: #131F35;
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
 
   font-family: 'Open Sans', 'sans-serif';
   padding: 1rem;
 
-  transition: top ease 0.5s;
+  box-shadow: 0 0 3px #00DAFF;
 
+  transition: top ease 0.5s;
 }
 #work-item:hover {
   outline: 1px solid #00DAFF;
