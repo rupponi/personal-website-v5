@@ -26,8 +26,8 @@ html,body {
 #work-partition {
   position: absolute;
     
-  top: 12rem;
-  left: 10%;
+  top: 10rem;
+  left: 8%;
 
   height: fit-content;
   width: 80%;
@@ -35,14 +35,14 @@ html,body {
   justify-content: center;
 
   display: grid;
-  text-align: center;
   grid-template-columns: repeat(auto-fit, 20rem);
-  column-width: 40rem;
+  grid-template-rows: repeat(auto-fit, 20rem);
+
   column-gap: 4rem;
   row-gap: 4rem;
 
-  animation-timing-function: cubic-bezier();
-  animation-duration: 1s;
+  transition-timing-function: cubic-bezier();
+  transition-duration: 1s;
 }
 
 .grid-item {

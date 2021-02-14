@@ -4,14 +4,15 @@ import '../styles/work.css';
 
 import NavBar from '../components/navbar/navbar';
 import WorkCard from '../components/work-card/work-card';
+import Datastore from '../data.json';
 
 class Work extends React.Component {
   render() {
     let content = [];
-    for (let x = 0; x < 6; x++) {
+    for (let x = 0; x < Datastore.work.content.length; x++) {
       content.push(
         <div className="grid-item">
-          <WorkCard/>
+          <WorkCard workData = {Datastore.work.content[x]}/>
         </div>
       );
     }
@@ -28,7 +29,7 @@ class Work extends React.Component {
             <NavBar/>
           </div>
           <div id = "view-container">
-            <h1 id = "work-section-title">Work</h1>
+            <h1 id = "work-section-title">{Datastore.work.title}</h1>
             <div id = "work-partition">
                 {content}
             </div>
