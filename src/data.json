@@ -107,19 +107,38 @@
         "content" : [
             {
                 "title" : "Scriber",
+                "externalLink" : "https://github.com/rupponi/scriber",
                 "description" : "An Android app focusing on giving the individual to build out their own medical portfolio."
             },
             {
-                "title" : "Ticketify",
-                "description" : "Spotify application."
+                "title" : "Viz for Spotify",
+                "externalLink" : "https://github.com/rupponi/ticketify",
+                "description" : "A Spotify visualizer app for viewing your music in a new light. Currently under development."
             },
             {
-                "title" : "test1",
-                "description" : "testing"
+                "title" : "WavPlayer",
+                "externalLink": "https://github.com/rupponi/wavplayer",
+                "description" : "A rough learning attempt at creating a music player for multiple audio file formats in Java."
             },
             {
-                "title" : "test2",
-                "description" : "testing again"
+                "title" : "test component",
+                "description" : "test description"
+            },
+            {
+                "title" : "test component",
+                "description" : "test description"
+            },
+            {
+                "title" : "test component",
+                "description" : "test description"
+            },
+            {
+                "title" : "test component",
+                "description" : "test description"
+            },
+            {
+                "title" : "test component",
+                "description" : "test description"
             }
         ]
     }
