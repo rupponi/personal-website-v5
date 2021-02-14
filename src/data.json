@@ -119,26 +119,6 @@
                 "title" : "WavPlayer",
                 "externalLink": "https://github.com/rupponi/wavplayer",
                 "description" : "A rough learning attempt at creating a music player for multiple audio file formats in Java."
-            },
-            {
-                "title" : "test component",
-                "description" : "test description"
-            },
-            {
-                "title" : "test component",
-                "description" : "test description"
-            },
-            {
-                "title" : "test component",
-                "description" : "test description"
-            },
-            {
-                "title" : "test component",
-                "description" : "test description"
-            },
-            {
-                "title" : "test component",
-                "description" : "test description"
             }
         ]
     }
