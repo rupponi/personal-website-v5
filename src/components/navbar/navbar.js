@@ -4,10 +4,11 @@ import "./navbar.css";
 
 var menuSelected = false;
 
-const MENU_LENGTH_MAX = 8;
+const MENU_LENGTH_MAX = 10;
 const MENU_ITEM_ABOUT_POS_MAX = 5;
 const MENU_ITEM_EXPERIENCE_POS_MAX = 9;
-const MENU_ITEM_RESUME_POS_MAX = 13;
+const MENU_ITEM_WORK_POS_MAX = 13
+const MENU_ITEM_RESUME_POS_MAX = 17;
 const MENU_SYMBOL_ROTATE_ANGLE_MAX = 180;
 
 function menuSelect() {
@@ -15,8 +16,9 @@ function menuSelect() {
     menuList = document.getElementById("menu-container"),
 
     aboutLink = document.getElementById("about-link"),
-    resumeLink = document.getElementById("resume-link"),
-    experienceLink = document.getElementById("experience-link");
+    experienceLink = document.getElementById("experience-link"),
+    workLink = document.getElementById("work-link"),
+    resumeLink = document.getElementById("resume-link");
 
     menuSymbol.classList.add("animate-symbol-click");
     menuSymbol.addEventListener('animationend', () => {
@@ -26,6 +28,7 @@ function menuSelect() {
     let menuLengthTarget = menuSelected ? 0 : MENU_LENGTH_MAX,
     aboutPosTarget = menuSelected ? 0 : MENU_ITEM_ABOUT_POS_MAX,
     experiencePosTarget = menuSelected ? 0 : MENU_ITEM_EXPERIENCE_POS_MAX,
+    workPosTarget = menuSelected ? 0 : MENU_ITEM_WORK_POS_MAX,
     resumePosTarget = menuSelected ? 0 : MENU_ITEM_RESUME_POS_MAX,
     symbolAngleTarget = menuSelected ? 0 : MENU_SYMBOL_ROTATE_ANGLE_MAX;
 
@@ -51,6 +54,12 @@ function menuSelect() {
     experienceLink.style.oTransform = "translate(0px, "+experiencePosTarget+"rem)";
     experienceLink.style.msTransform = "translate(0px, "+experiencePosTarget+"rem)";
     experienceLink.style.transform = "translate(0px, "+experiencePosTarget+"rem)";
+
+    workLink.style.webkitTransform = "translate(0px, "+workPosTarget+"rem)";
+    workLink.style.mozTransform = "translate(0px, "+workPosTarget+"rem)";
+    workLink.style.oTransform = "translate(0px, "+workPosTarget+"rem)";
+    workLink.style.msTransform = "translate(0px, "+workPosTarget+"rem)";
+    workLink.style.transform = "translate(0px, "+workPosTarget+"rem)";
 
     resumeLink.style.webkitTransform = "translate(0px, "+resumePosTarget+"rem)";
     resumeLink.style.mozTransform = "translate(0px, "+resumePosTarget+"rem)";
@@ -118,6 +127,20 @@ class NavBar extends React.Component {
         setTimeout(() => { navigate('/experience'); }, 250);
     }
 
+    selectWork() {
+        let experienceLink = document.getElementById("experience-link");
+    
+        experienceLink.classList.add("animate-menu-item-click");
+        experienceLink.addEventListener('animationend', () => {
+            experienceLink.classList.remove("animate-menu-item-click");
+        });
+    
+        if (menuSelected) {
+            menuSelect();
+        }
+        setTimeout(() => { navigate('/work'); }, 250);
+    }
+
     selectResume() {
         let resumeLink = document.getElementById("resume-link");
     
@@ -148,11 +171,14 @@ class NavBar extends React.Component {
                     <li id = "about-link" className = "list-link unselectable">
                         <span class = "list-link-span" onClick = {this.selectAbout} onKeyPress = {this.selectAbout} tabIndex="0" role="button">ABOUT</span>
                     </li>
-                    <li id = "resume-link" className = "list-link unselectable">
-                        <span class = "list-link-span" onClick = {this.selectResume} onKeyPress = {this.selectResume} tabIndex="0" role="button">RESUME</span>
-                    </li>
                     <li id = "experience-link" className = "list-link unselectable">
                         <span class = "list-link-span" onClick = {this.selectExperience} onKeyPress = {this.selectExperience} tabIndex="0" role="button">EXPERIENCE</span>
+                    </li>
+                    <li id = "work-link" className = "list-link unselectable">
+                        <span class = "list-link-span" onClick = {this.selectWork} onKeyPress = {this.selectWork} tabIndex="0" role="button">WORK</span>
+                    </li>
+                    <li id = "resume-link" className = "list-link unselectable">
+                        <span class = "list-link-span" onClick = {this.selectResume} onKeyPress = {this.selectResume} tabIndex="0" role="button">RESUME</span>
                     </li>
                 </ul>
             </div>
