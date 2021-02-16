@@ -169,16 +169,16 @@ class NavBar extends React.Component {
                 <div id = "menu-container"></div>
                 <ul id = "menu-list">
                     <li id = "about-link" className = "list-link unselectable">
-                        <span class = "list-link-span" onClick = {this.selectAbout} onKeyPress = {this.selectAbout} tabIndex="0" role="button">ABOUT</span>
+                        <span className = "list-link-span" onClick = {this.selectAbout} onKeyPress = {this.selectAbout} tabIndex="0" role="button">ABOUT</span>
                     </li>
                     <li id = "experience-link" className = "list-link unselectable">
-                        <span class = "list-link-span" onClick = {this.selectExperience} onKeyPress = {this.selectExperience} tabIndex="0" role="button">EXPERIENCE</span>
+                        <span className = "list-link-span" onClick = {this.selectExperience} onKeyPress = {this.selectExperience} tabIndex="0" role="button">EXPERIENCE</span>
                     </li>
                     <li id = "work-link" className = "list-link unselectable">
-                        <span class = "list-link-span" onClick = {this.selectWork} onKeyPress = {this.selectWork} tabIndex="0" role="button">WORK</span>
+                        <span className = "list-link-span" onClick = {this.selectWork} onKeyPress = {this.selectWork} tabIndex="0" role="button">WORK</span>
                     </li>
                     <li id = "resume-link" className = "list-link unselectable">
-                        <span class = "list-link-span" onClick = {this.selectResume} onKeyPress = {this.selectResume} tabIndex="0" role="button">RESUME</span>
+                        <span className = "list-link-span" onClick = {this.selectResume} onKeyPress = {this.selectResume} tabIndex="0" role="button">RESUME</span>
                     </li>
                 </ul>
             </div>

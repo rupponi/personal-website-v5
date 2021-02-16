@@ -108,17 +108,20 @@
             {
                 "title" : "Scriber",
                 "externalLink" : "https://github.com/rupponi/scriber",
-                "description" : "An Android app focusing on giving the individual to build out their own medical portfolio."
+                "description" : "An Android app focusing on giving users the ability to create their own medical portfolios. Keep notes from different doctor's visits. Hold onto easily forgotten information such as family illness history, lifestyle changes, past vaccination dates, etc.",
+                "skills" : ["Android", "Java", "XML", "Google Firestore"]
             },
             {
                 "title" : "Viz for Spotify",
                 "externalLink" : "https://github.com/rupponi/ticketify",
-                "description" : "A Spotify visualizer app for viewing your music in a new light. Currently under development."
+                "description" : "A Spotify visualizer app for viewing your music in a new light. Currently under development.",
+                "skills" : ["ReactJS", "Node.js", "Express.js", "HTML", "CSS"]
             },
             {
                 "title" : "WavPlayer",
                 "externalLink": "https://github.com/rupponi/wavplayer",
-                "description" : "A rough learning attempt at creating a music player for multiple audio file formats in Java."
+                "description" : "A rough learning attempt at creating a music player for multiple audio file formats in Java.",
+                "skills" : ["Java", "JavaFX GUI", "Javax Media"]
             }
         ]
     }
