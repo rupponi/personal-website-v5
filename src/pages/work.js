@@ -32,7 +32,6 @@ class Work extends React.Component {
             <h1 id = "work-section-title">{Datastore.work.title}</h1>
             <div id = "work-partition">
                 {content}
-                <br/>
             </div>
           </div>
       </html>

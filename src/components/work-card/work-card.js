@@ -12,7 +12,7 @@ class WorkCard extends React.Component {
       <div id = "work-item" className = "unselectable" onClick={() => {window.open(this.props.workData.externalLink, "_blank")}} onKeyPress={() => {window.open(this.props.workData.externalLink, "_blank")}} tabIndex="0" role="button">
         <div id = "work-item-text">
           <h2 style={{fontWeight: "bolder"}}>{this.props.workData.title}</h2>
-          <h5 style={{textAlign: "center"}}>{this.props.workData.description}</h5>
+          <h5 style={{textAlign: "justify"}}>{this.props.workData.description}</h5>
         </div>
         <div id = "work-item-skills">
           {skills}

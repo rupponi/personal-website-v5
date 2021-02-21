@@ -40,7 +40,7 @@ class Experience extends React.Component {
                   <div id = "experience-partition">
 
                       {experienceData}
-
+                      
                       <div id = "signature">
                           <a id = "signature-link" rel = "noopener noreferrer" target = "_blank" href = "https://github.com/rupponi"><h3>© 2021 Rohan Upponi</h3></a>
                       </div>

@@ -61,10 +61,16 @@ html,body {
     list-style-type: square;
 }
 
+#signature {
+    display: inline-block;
+    height: 2rem;
+    top: calc(100% - 2.5rem);
+}
+  
 #signature-link {
     color: #004A57;
     text-decoration: none;
-
+  
     font-family: "Open Sans", "sans-serif";
     font-size: 0.8rem;
     font-weight: lighter;
