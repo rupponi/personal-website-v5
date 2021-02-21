@@ -122,6 +122,12 @@
                 "externalLink": "https://github.com/rupponi/wavplayer",
                 "description" : "My first significant personal project working with Java multithreading and UI/UX components with the JavaFX media library. WavPlayer plays MP3's and WAV files, running in a Java 8 environment and capable of running on Windows and Linux.",
                 "skills" : ["Java", "JavaFX GUI", "Javax Media", "Multithreading"]
+            },
+            {
+                "title" : "Personal Website (v.7)",
+                "externalLink" : "https://github.com/rupponi/portfolio",
+                "description" : "My current personal website that acts as a porfolio for my skills and projects, while also providing a valuable foundation for web development.",
+                "skills" : ["Gatsby.js", "HTML", "CSS", "Netlify"]
             }
         ]
     }
