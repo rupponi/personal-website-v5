@@ -3,6 +3,11 @@ import './experience-card.css';
 
 class ExperienceCard extends React.Component {
     render() {
+        let experienceListings = [];
+        for (let x = 0; x < this.props.experienceData.description.length; x++) {
+            experienceListings.push(<li className="experience-list-item">{this.props.experienceData.description[x].body}</li>)
+        }
+
         return(
             <div id = "experience-item" className="unselectable">
                 <div id = "title">
@@ -26,7 +31,9 @@ class ExperienceCard extends React.Component {
                 </div>
                 <span id = "experience-content-break"/>
                 <div id = "experience-content">
-                    {this.props.children}
+                    <ul className="experience-description">
+                        {experienceListings}
+                    </ul>
                 </div>
             </div>
         );

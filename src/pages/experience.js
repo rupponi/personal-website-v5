@@ -11,15 +11,7 @@ class Experience extends React.Component {
     render() {
       let experienceData = [];
       for (let x = 0; x < Datastore.experience.content.length; x++) {
-          experienceData.push(
-              <ExperienceCard experienceData = {Datastore.experience.content[x]}>
-                  <ul class = "experience-description">
-                      {
-                          Datastore.experience.content[x].description.map((item, y) => <li key={y} class = "experience-list-item">{item.body}</li>)
-                      }
-                  </ul>
-              </ExperienceCard>
-          );
+          experienceData.push(<ExperienceCard experienceData = {Datastore.experience.content[x]}/>);
           experienceData.push(<br/>);
       }
 

@@ -39,23 +39,11 @@ html,body {
 #experience-partition {
     position: absolute;
     
-    top: 9rem;
+    top: 10rem;
     left: 10%;
 
     height: fit-content;
     width: 75%;
-}
-
-.experience-description {
-    font-family: 'Open Sans', 'sans-serif';
-    font-size: 1rem;
-
-    margin-left: 0.7rem;
-    margin-right: 3rem;
-}
-
-.experience-list-item {
-    list-style-type: square;
 }
 
 #signature {
