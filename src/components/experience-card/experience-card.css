@@ -146,7 +146,7 @@
     text-align: left;
 }
 
-#experience-list-item {
+.experience-list-item {
     list-style-type: square;
 }
 
